@@ -824,29 +824,27 @@
 
         .steps {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 0;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: rgba(255, 255, 255, .08);
         }
 
         .step {
-            padding: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, .14);
+            padding: 2.4rem;
             position: relative;
+            background: var(--forest);
+            overflow: hidden;
         }
 
+
         .step:not(:last-child)::after {
-            content: '→';
-            position: absolute;
-            top: 2rem;
-            right: -.6rem;
-            color: var(--terra2);
-            font-size: 1.1rem;
+            display: none;
         }
 
         .step-n {
             font-family: 'Cormorant Garamond', serif;
             font-size: 3.8rem;
-            color: rgba(255, 255, 255, .1);
+            color: rgba(255, 255, 255, .85);
             font-weight: 300;
             line-height: 1;
             margin-bottom: .9rem;
@@ -1483,23 +1481,15 @@
                 <p class="s-tag rv">Sobre Mim</p>
                 <h2 class="rv d1">Uma psicóloga comprometida com o seu bem-estar</h2>
             </div>
-            <p class="sobre-intro rv d2">Chamo-me <span style="color:var(--terra)">Filipa Vilhena Martins</span>, nasci
-                em Guimarães e sou filha, irmã mais nova
-                e tia. Cresci rodeada por uma família numerosa e por amigos que, desempenharam um papel fundamental na
-                construção das minhas raízes e da pessoa que sou hoje. Há 5 anos, tornei-me mãe de uma menina e há um
-                ano de um menino.</p>
+            <p class="sobre-intro rv d2">Chamo-me <span style="color:var(--terra)">Filipa Vilhena Martins</span>, nasci em Guimarães e sou filha, irmã mais nova e tia. Cresci rodeada por uma família numerosa e por amigos que, desempenharam um papel fundamental na construção das minhas raízes e da pessoa que sou hoje. Há 5 anos, tornei-me mãe de uma menina e há um ano de um menino.</p>
 
             <div class="sobre-section rv">
                 <div class="sobre-section-label">
                     <h4>Percurso<br>Académico</h4>
                 </div>
                 <div class="sobre-section-body">
-                    <p>Iniciei a licenciatura em Psicologia em 2007, fiz Erasmus em Barcelona durante a mesma.
-                        Posteriormente, concluí o Mestrado em Psicologia da Justiça, tendo realizado o estágio
-                        curricular numa Comunidade Terapêutica (CT), que concluí com a elaboração de Relatório de
-                        Estágio e Dissertação.</p>
-                    <p>Em 2023, terminei a Especialização Avançada em Terapias Cognitivo-Comportamentais, no instituto
-                        CRIAP.</p>
+                    <p>Iniciei a licenciatura em Psicologia em 2007, fiz Erasmus em Barcelona durante a mesma. Posteriormente, concluí o Mestrado em Psicologia da Justiça, tendo realizado o estágio curricular numa Comunidade Terapêutica (CT), que concluí com a elaboração de Relatório de Estágio e Dissertação.</p>
+                    <p>Em 2023, terminei a <span style="color:var(--terra)">Especialização Avançada em Terapias Cognitivo-Comportamentais</span>, no instituto CRIAP.</p>
                 </div>
             </div>
 
@@ -1508,20 +1498,11 @@
                     <h4>Experiência<br>Profissional</h4>
                 </div>
                 <div class="sobre-section-body">
-                    <p>Em 2014, realizei o meu estágio profissional numa CT, na cidade de Chaves. Posteriormente,
-                        mudei-me para Setúbal, onde integrei outra CT. Concluí o meu Estágio da OPP em 2019, tendo
-                        continuado a exercer funções na mesma clínica.</p>
-                    <p>Em 2020, tomei a decisão que mais transformadora e desafiante da minha vida: ser mãe e regressar
-                        à cidade onde nasci. Esta mudança levou-me a sair da minha zona de conforto e a abraçar novos
-                        desafios profissionais. Trabalhei na linha SNS de apoio à COVID-19, realizei consultas de
-                        psicologia exclusivamente online, colaborei numa clínica em regime online e presencial e
-                        desempenhei funções como dinamizadora comunitária.</p>
-                    <p>Em fevereiro de 2023, regressei ao contexto de CT, onde permaneci até julho de 2026.</p>
-                    <p>Atualmente, conto com mais de 10 anos de experiência prática, maioritariamente em comunidades
-                        terapêuticas. Este percurso permitiu-me, acompanhar inúmeros casos, maioritariamente com
-                        diagnóstico de Adições e Comportamentos Dependentes, frequentemente com comorbilidade de outros
-                        diagnósticos e/ou sintomas psicológicos, proporcionando-me uma experiência clínica diversificada
-                        e aprofundada.</p>
+                    <p>Em 2014, realizei o meu estágio profissional numa CT, na cidade de Chaves. Posteriormente, mudei-me para Setúbal, onde integrei outra CT. Concluí o meu <span style="color:var(--terra)">Estágio da OPP</span> em 2019, tendo continuado a exercer funções na mesma clínica.</p>
+                    <p>Em 2020, tomei a decisão que mais transformadora e desafiante da minha vida: ser mãe e regressar à cidade onde nasci. Esta mudança levou-me a sair da minha zona de conforto e a abraçar novos desafios profissionais. Trabalhei na linha SNS de apoio à COVID-19, realizei consultas de psicologia exclusivamente online, colaborei numa clínica em <span style="color:var(--terra)">regime online e presencial</span> e desempenhei funções como dinamizadora comunitária.</p>
+                    <p>Em fevereiro de 2023 regressei ao contexto das Comunidades Terapêuticas, onde permaneci até julho de 2026.</p>
+                    <p>Atualmente, conto com mais de 10 anos de experiência prática na área da Psicologia. Grande parte deste percurso foi desenvolvida em Comunidades Terapêuticas, acompanhando pessoas com diagnóstico de Adições e Comportamentos Dependentes, frequentemente com comorbilidade de outros diagnósticos e/ou sintomas psicológicos.</p>
+                    <p>Esta experiência permitiu-me desenvolver uma prática clínica sólida e diversificada, assente na escuta, na empatia e no rigor científico. Atualmente, realizo acompanhamento psicológico através de consultas presenciais em Guimarães e consultas online.</p>
                 </div>
             </div>
         </div>
@@ -1668,128 +1649,29 @@
     <section id="processo">
         <div class="section-inner">
             <div class="proc-head">
-                <p class="s-tag rv">Como funciona</p>
+                <p class="s-tag rv">Abordagem Terapêutica | Cognitivo-Comportamental</p>
                 <h2 class="rv d1">O percurso terapêutico</h2>
             </div>
             <div class="steps">
                 <div class="step rv">
                     <div class="step-n">01</div>
-                    <h3>Contacto inicial</h3>
-                    <p>Envie uma mensagem ou ligue. Responderei em 24–48 horas para agendar uma primeira conversa, sem
-                        compromisso.</p>
+                    <h3>Avaliação</h3>
+                    <p>A avaliação psicológica é o ponto de partida para a construção de um plano de intervenção personalizado. Sendo um processo contínuo e dinâmico, permite ajustar estratégias ao longo do acompanhamento, em constante articulação e reflexão com o/a paciente.</p>
                 </div>
                 <div class="step rv d1">
                     <div class="step-n">02</div>
-                    <h3>Primeira consulta</h3>
-                    <p>Sessão de avaliação para nos conhecermos, clarificarmos as suas necessidades e percebermos se
-                        existe compatibilidade terapêutica.</p>
+                    <h3>Definição de Metas</h3>
+                    <p>O/A paciente identifica as dificuldades que deseja trabalhar e os objetivos que pretende atingir, enquanto o terapeuta o/a auxilia na identificação de obstáculos e na construção de recursos e estratégias que facilitem a concretização dessas metas.</p>
                 </div>
                 <div class="step rv d2">
                     <div class="step-n">03</div>
-                    <h3>Plano terapêutico</h3>
-                    <p>Definimos em conjunto um plano adaptado a si — frequência de sessões, objectivos a trabalhar e
-                        estratégias a desenvolver.</p>
+                    <h3>Implementação da Intervenção</h3>
+                    <p>Cada sessão é orientada por objetivos específicos, promovendo o autoconhecimento e a compreensão do próprio funcionamento. A intervenção é sustentada pelos princípios da Terapia Cognitivo-Comportamental, uma das abordagens mais estudadas e eficazes na intervenção psicológica.</p>
                 </div>
                 <div class="step rv d3">
                     <div class="step-n">04</div>
-                    <h3>Acompanhamento</h3>
-                    <p>Sessões semanais ou quinzenais, com avaliação contínua do processo e ajuste conforme a sua
-                        evolução.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTEMUNHOS -->
-    <section id="testemunhos">
-        <div class="section-inner">
-            <div class="test-head">
-                <p class="s-tag rv">Testemunhos</p>
-                <h2 class="rv d1">O que dizem os meus pacientes</h2>
-            </div>
-            <div class="test-track rv" id="testTrack">
-                <div class="testem">
-                    <p class="testem-txt">"Depois de anos a evitar pedir ajuda, a Dra. foi a pessoa certa para
-                        começar. A forma como cria um espaço seguro e sem julgamentos fez toda a diferença. Hoje tenho
-                        ferramentas que nunca pensei conseguir desenvolver."</p>
-                    <span class="testem-author">M.S. — Consulta Individual</span>
-                </div>
-                <div class="testem">
-                    <p class="testem-txt">"A terapia de casal salvou a nossa relação. A Dra. soube ouvir os dois
-                        lados com total imparcialidade e ajudou-nos a encontrar uma linguagem comum. Recomendo sem
-                        hesitar."</p>
-                    <span class="testem-author">R.P. &amp; T.P. — Terapia de Casal</span>
-                </div>
-                <div class="testem">
-                    <p class="testem-txt">"Fui à avaliação psicológica com muitas dúvidas sobre mim própria. O relatório
-                        foi revelador e a sessão de devolução foi das experiências mais esclarecedoras da minha vida.
-                        Profissionalismo a todos os níveis."</p>
-                    <span class="testem-author">A.L. — Avaliação Psicológica</span>
-                </div>
-                <div class="testem">
-                    <p class="testem-txt">"As consultas online foram uma surpresa muito positiva. A qualidade é
-                        exactamente a mesma e poder fazer terapia sem sair de casa, com a minha agenda complicada, foi
-                        fundamental para manter a continuidade."</p>
-                    <span class="testem-author">F.C. — Consulta Online</span>
-                </div>
-            </div>
-            <div class="test-nav rv">
-                <button class="scroll-btn" id="tPrev">←</button>
-                <button class="scroll-btn" id="tNext">→</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq">
-        <div class="section-inner faq-grid">
-            <div class="faq-intro">
-                <p class="s-tag rv">Perguntas Frequentes</p>
-                <h2 class="rv d1">Tem dúvidas?</h2>
-                <p class="rv d2">Reunimos as questões mais comuns. Não encontra o que procura? <a href="#contacto">Entre
-                        em contacto.</a></p>
-            </div>
-            <div class="faq-list rv">
-                <div class="faq-item">
-                    <div class="faq-q">Quanto tempo dura cada sessão?<div class="faq-tog"></div>
-                    </div>
-                    <div class="faq-a">As sessões têm a duração de 50 minutos. As sessões de avaliação psicológica podem
-                        ter durações variáveis conforme o protocolo utilizado.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q">Qual é o custo de uma consulta?<div class="faq-tog"></div>
-                    </div>
-                    <div class="faq-a">As consultas individuais têm o valor de 70€ por sessão. As consultas de casal têm
-                        o valor de 85€. Para avaliação psicológica, o custo depende do tipo de avaliação — consulte-me
-                        para orçamento. Aceito pagamento por transferência bancária ou MB Way.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q">Com que frequência devo fazer consultas?<div class="faq-tog"></div>
-                    </div>
-                    <div class="faq-a">Na fase inicial, as sessões são tipicamente semanais. Com a evolução do processo,
-                        podem espaçar-se para quinzenais ou mensais, conforme os objectivos e necessidades de cada
-                        pessoa.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q">As consultas são confidenciais?<div class="faq-tog"></div>
-                    </div>
-                    <div class="faq-a">Sim, totalmente. O sigilo profissional é um pilar fundamental da prática
-                        psicológica, consagrado no Código Deontológico da Ordem dos Psicólogos Portugueses. Tudo o que
-                        partilha nas sessões fica entre nós, excepto nas situações expressamente previstas na lei.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q">Como sei se preciso de ir ao psicólogo?<div class="faq-tog"></div>
-                    </div>
-                    <div class="faq-a">Não é preciso estar em crise para beneficiar de terapia. Se sente que algo o
-                        incomoda, tem dificuldade em gerir emoções, os seus relacionamentos são afectados, ou
-                        simplesmente quer crescer e conhecer-se melhor — esse é motivo suficiente.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q">Trabalha com seguros de saúde?<div class="faq-tog"></div>
-                    </div>
-                    <div class="faq-a">Actualmente não tenho protocolos directos com seguradoras. No entanto, muitos
-                        seguros permitem reembolso parcial mediante apresentação de recibo. Consulte as condições da sua
-                        apólice.</div>
+                    <h3>Avaliação e Finalização</h3>
+                    <p>Paciente e terapeuta avaliam os resultados obtidos e o alcance das metas definidas. O/A paciente ficará dotado/a de competências e estratégias que promovam a sua autonomia, incluindo ferramentas de prevenção da recaída e manutenção do bem-estar psicológico.</p>
                 </div>
             </div>
         </div>
@@ -1865,7 +1747,7 @@
     <!-- FOOTER -->
     <footer>
         <div class="foot-inner">
-            <div class="foot-logo">Dra. Mariana <span>Fonseca</span></div>
+            <div class="foot-logo">Filipa Vilhena <span>Martins</span></div>
             <div class="foot-links">
                 <a href="#sobre">Sobre Mim</a>
                 <a href="#servicos">Áreas de Intervenção</a>
@@ -1874,8 +1756,7 @@
                 <a href="#">Política de Privacidade</a>
             </div>
         </div>
-        <p class="foot-legal">© 2025 Dra. Lorem Ipsum — Psicóloga Clínica. Cédula n.º XXXXX OPP. Todos os direitos
-            reservados.</p>
+        <p class="foot-legal">© 2026 Filipa Vilhena Martins — Psicóloga Clínica | Raízes do Eu. C.P. 23722 OPP. Todos os direitos reservados.</p>
     </footer>
 
     <script>
