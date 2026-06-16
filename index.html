@@ -513,7 +513,7 @@
         }
 
         .s-tag {
-            font-size: .7rem;
+            font-size: .95rem;
             letter-spacing: .2em;
             text-transform: uppercase;
             color: var(--terra);
@@ -802,7 +802,7 @@
 
         /* ── PROCESSO ── */
         #processo {
-            background: var(--forest);
+            background: var(--cream2);
         }
 
         #processo .s-tag::before {
@@ -813,29 +813,47 @@
             color: var(--terra2);
         }
 
+        #sobre .s-tag,
+        #abordagem .s-tag,
+        #servicos .s-tag,
+        #processo .s-tag,
+        #contacto .s-tag {
+            font-size: .95rem;
+            letter-spacing: .2em;
+            color: var(--terra) !important;
+        }
+
+        #sobre .s-tag::before,
+        #abordagem .s-tag::before,
+        #servicos .s-tag::before,
+        #processo .s-tag::before,
+        #contacto .s-tag::before {
+            background: var(--terra) !important;
+        }
+
         .proc-head {
             margin-bottom: 3.5rem;
         }
 
         .proc-head h2 {
-            color: var(--cream);
+            color: var(--forest);
             font-size: clamp(1.9rem, 4vw, 3.2rem);
         }
 
         .steps {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1px;
-            background: rgba(255, 255, 255, .08);
+            gap: 1.2rem;
+            background: transparent;
         }
 
         .step {
             padding: 2.4rem;
             position: relative;
-            background: var(--forest);
+            background: var(--cream);
             overflow: hidden;
+            border-top: 3px solid var(--terra);
         }
-
 
         .step:not(:last-child)::after {
             display: none;
@@ -844,7 +862,7 @@
         .step-n {
             font-family: 'Cormorant Garamond', serif;
             font-size: 3.8rem;
-            color: rgba(255, 255, 255, .85);
+            color: var(--cream3);
             font-weight: 300;
             line-height: 1;
             margin-bottom: .9rem;
@@ -852,13 +870,13 @@
 
         .step h3 {
             font-size: 1.2rem;
-            color: var(--cream);
+            color: var(--forest);
             margin-bottom: .7rem;
         }
 
         .step p {
             font-size: .85rem;
-            color: rgba(255, 255, 255, .55);
+            color: var(--txt2);
             line-height: 1.7;
         }
 
@@ -1052,7 +1070,7 @@
 
         /* ── CONTACTO ── */
         #contacto {
-            background: var(--cream2);
+            background: #ffffff;
         }
 
         .cont-grid {
@@ -1481,15 +1499,22 @@
                 <p class="s-tag rv">Sobre Mim</p>
                 <h2 class="rv d1">Uma psicóloga comprometida com o seu bem-estar</h2>
             </div>
-            <p class="sobre-intro rv d2">Chamo-me <span style="color:var(--terra)">Filipa Vilhena Martins</span>, nasci em Guimarães e sou filha, irmã mais nova e tia. Cresci rodeada por uma família numerosa e por amigos que, desempenharam um papel fundamental na construção das minhas raízes e da pessoa que sou hoje. Há 5 anos, tornei-me mãe de uma menina e há um ano de um menino.</p>
+            <p class="sobre-intro rv d2">Chamo-me <span style="color:var(--terra)">Filipa Vilhena Martins</span>, nasci
+                em Guimarães e sou filha, irmã mais nova e tia. Cresci rodeada por uma família numerosa e por amigos
+                que, desempenharam um papel fundamental na construção das minhas raízes e da pessoa que sou hoje. Há 5
+                anos, tornei-me mãe de uma menina e há um ano de um menino.</p>
 
             <div class="sobre-section rv">
                 <div class="sobre-section-label">
                     <h4>Percurso<br>Académico</h4>
                 </div>
                 <div class="sobre-section-body">
-                    <p>Iniciei a licenciatura em Psicologia em 2007, fiz Erasmus em Barcelona durante a mesma. Posteriormente, concluí o Mestrado em Psicologia da Justiça, tendo realizado o estágio curricular numa Comunidade Terapêutica (CT), que concluí com a elaboração de Relatório de Estágio e Dissertação.</p>
-                    <p>Em 2023, terminei a <span style="color:var(--terra)">Especialização Avançada em Terapias Cognitivo-Comportamentais</span>, no instituto CRIAP.</p>
+                    <p>Iniciei a licenciatura em Psicologia em 2007, fiz Erasmus em Barcelona durante a mesma.
+                        Posteriormente, concluí o Mestrado em Psicologia da Justiça, tendo realizado o estágio
+                        curricular numa Comunidade Terapêutica (CT), que concluí com a elaboração de Relatório de
+                        Estágio e Dissertação.</p>
+                    <p>Em 2023, terminei a <span style="color:var(--terra)">Especialização Avançada em Terapias
+                            Cognitivo-Comportamentais</span>, no instituto CRIAP.</p>
                 </div>
             </div>
 
@@ -1498,11 +1523,25 @@
                     <h4>Experiência<br>Profissional</h4>
                 </div>
                 <div class="sobre-section-body">
-                    <p>Em 2014, realizei o meu estágio profissional numa CT, na cidade de Chaves. Posteriormente, mudei-me para Setúbal, onde integrei outra CT. Concluí o meu <span style="color:var(--terra)">Estágio da OPP</span> em 2019, tendo continuado a exercer funções na mesma clínica.</p>
-                    <p>Em 2020, tomei a decisão que mais transformadora e desafiante da minha vida: ser mãe e regressar à cidade onde nasci. Esta mudança levou-me a sair da minha zona de conforto e a abraçar novos desafios profissionais. Trabalhei na linha SNS de apoio à COVID-19, realizei consultas de psicologia exclusivamente online, colaborei numa clínica em <span style="color:var(--terra)">regime online e presencial</span> e desempenhei funções como dinamizadora comunitária.</p>
-                    <p>Em fevereiro de 2023 regressei ao contexto das Comunidades Terapêuticas, onde permaneci até julho de 2026.</p>
-                    <p>Atualmente, conto com mais de 10 anos de experiência prática na área da Psicologia. Grande parte deste percurso foi desenvolvida em Comunidades Terapêuticas, acompanhando pessoas com diagnóstico de Adições e Comportamentos Dependentes, frequentemente com comorbilidade de outros diagnósticos e/ou sintomas psicológicos.</p>
-                    <p>Esta experiência permitiu-me desenvolver uma prática clínica sólida e diversificada, assente na escuta, na empatia e no rigor científico. Atualmente, realizo acompanhamento psicológico através de consultas presenciais em Guimarães e consultas online.</p>
+                    <p>Em 2014, realizei o meu estágio profissional numa CT, na cidade de Chaves. Posteriormente,
+                        mudei-me para Setúbal, onde integrei outra CT. Concluí o meu <span
+                            style="color:var(--terra)">Estágio da OPP</span> em 2019, tendo continuado a exercer funções
+                        na mesma clínica.</p>
+                    <p>Em 2020, tomei a decisão que mais transformadora e desafiante da minha vida: ser mãe e regressar
+                        à cidade onde nasci. Esta mudança levou-me a sair da minha zona de conforto e a abraçar novos
+                        desafios profissionais. Trabalhei na linha SNS de apoio à COVID-19, realizei consultas de
+                        psicologia exclusivamente online, colaborei numa clínica em <span
+                            style="color:var(--terra)">regime online e presencial</span> e desempenhei funções como
+                        dinamizadora comunitária.</p>
+                    <p>Em fevereiro de 2023 regressei ao contexto das Comunidades Terapêuticas, onde permaneci até julho
+                        de 2026.</p>
+                    <p>Atualmente, conto com mais de 10 anos de experiência prática na área da Psicologia. Grande parte
+                        deste percurso foi desenvolvida em Comunidades Terapêuticas, acompanhando pessoas com
+                        diagnóstico de Adições e Comportamentos Dependentes, frequentemente com comorbilidade de outros
+                        diagnósticos e/ou sintomas psicológicos.</p>
+                    <p>Esta experiência permitiu-me desenvolver uma prática clínica sólida e diversificada, assente na
+                        escuta, na empatia e no rigor científico. Atualmente, realizo acompanhamento psicológico através
+                        de consultas presenciais em Guimarães e consultas online.</p>
                 </div>
             </div>
         </div>
@@ -1656,22 +1695,31 @@
                 <div class="step rv">
                     <div class="step-n">01</div>
                     <h3>Avaliação</h3>
-                    <p>A avaliação psicológica é o ponto de partida para a construção de um plano de intervenção personalizado. Sendo um processo contínuo e dinâmico, permite ajustar estratégias ao longo do acompanhamento, em constante articulação e reflexão com o/a paciente.</p>
+                    <p>A avaliação psicológica é o ponto de partida para a construção de um plano de intervenção
+                        personalizado. Sendo um processo contínuo e dinâmico, permite ajustar estratégias ao longo do
+                        acompanhamento, em constante articulação e reflexão com o/a paciente.</p>
                 </div>
                 <div class="step rv d1">
                     <div class="step-n">02</div>
                     <h3>Definição de Metas</h3>
-                    <p>O/A paciente identifica as dificuldades que deseja trabalhar e os objetivos que pretende atingir, enquanto o terapeuta o/a auxilia na identificação de obstáculos e na construção de recursos e estratégias que facilitem a concretização dessas metas.</p>
+                    <p>O/A paciente identifica as dificuldades que deseja trabalhar e os objetivos que pretende atingir,
+                        enquanto o terapeuta o/a auxilia na identificação de obstáculos e na construção de recursos e
+                        estratégias que facilitem a concretização dessas metas.</p>
                 </div>
                 <div class="step rv d2">
                     <div class="step-n">03</div>
                     <h3>Implementação da Intervenção</h3>
-                    <p>Cada sessão é orientada por objetivos específicos, promovendo o autoconhecimento e a compreensão do próprio funcionamento. A intervenção é sustentada pelos princípios da Terapia Cognitivo-Comportamental, uma das abordagens mais estudadas e eficazes na intervenção psicológica.</p>
+                    <p>Cada sessão é orientada por objetivos específicos, promovendo o autoconhecimento e a compreensão
+                        do próprio funcionamento. A intervenção é sustentada pelos princípios da Terapia
+                        Cognitivo-Comportamental, uma das abordagens mais estudadas e eficazes na intervenção
+                        psicológica.</p>
                 </div>
                 <div class="step rv d3">
                     <div class="step-n">04</div>
                     <h3>Avaliação e Finalização</h3>
-                    <p>Paciente e terapeuta avaliam os resultados obtidos e o alcance das metas definidas. O/A paciente ficará dotado/a de competências e estratégias que promovam a sua autonomia, incluindo ferramentas de prevenção da recaída e manutenção do bem-estar psicológico.</p>
+                    <p>Paciente e terapeuta avaliam os resultados obtidos e o alcance das metas definidas. O/A paciente
+                        ficará dotado/a de competências e estratégias que promovam a sua autonomia, incluindo
+                        ferramentas de prevenção da recaída e manutenção do bem-estar psicológico.</p>
                 </div>
             </div>
         </div>
@@ -1756,7 +1804,8 @@
                 <a href="#">Política de Privacidade</a>
             </div>
         </div>
-        <p class="foot-legal">© 2026 Filipa Vilhena Martins — Psicóloga Clínica | Raízes do Eu. C.P. 23722 OPP. Todos os direitos reservados.</p>
+        <p class="foot-legal">© 2026 Filipa Vilhena Martins — Psicóloga Clínica | Raízes do Eu. C.P. 23722 OPP. Todos os
+            direitos reservados.</p>
     </footer>
 
     <script>
