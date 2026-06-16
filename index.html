@@ -612,6 +612,7 @@
         /* ── ABORDAGEM ── */
         #abordagem {
             background: var(--cream2);
+            scroll-margin-top: 5rem;
         }
 
         .abord-head {
@@ -667,6 +668,7 @@
         /* ── ÁREAS DE INTERVENÇÃO ── */
         #servicos {
             background: var(--cream);
+            scroll-margin-top: 5rem;
         }
 
         .serv-head {
@@ -803,6 +805,7 @@
         /* ── PROCESSO ── */
         #processo {
             background: var(--cream2);
+            scroll-margin-top: 5rem;
         }
 
         #processo .s-tag::before {
@@ -1071,6 +1074,7 @@
         /* ── CONTACTO ── */
         #contacto {
             background: #ffffff;
+            scroll-margin-top: 5rem;
         }
 
         .cont-grid {
@@ -1175,16 +1179,20 @@
             transition: border-color .3s;
             resize: none;
             appearance: none;
+            -webkit-appearance: none;
+            width: 100%;
+            box-sizing: border-box;
+            height: 2.9rem;
+        }
+
+        .fg textarea {
+            height: 110px;
         }
 
         .fg input:focus,
         .fg select:focus,
         .fg textarea:focus {
             border-color: var(--terra);
-        }
-
-        .fg textarea {
-            height: 110px;
         }
 
         .form-check {
@@ -1292,6 +1300,83 @@
             padding-top: 1.4rem;
             border-top: 1px solid rgba(255, 255, 255, .1);
             margin-top: 1rem;
+        }
+
+        /* ── COOKIE BANNER ── */
+        #cookieBanner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 500;
+            background: var(--cream);
+            border-top: 1px solid var(--border);
+            padding: 1.2rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        #cookieBanner p {
+            font-family: 'Jost', sans-serif;
+            font-size: .85rem;
+            color: var(--txt2);
+            line-height: 1.6;
+            margin: 0;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .cookie-btns {
+            display: flex;
+            gap: .8rem;
+            flex-shrink: 0;
+        }
+
+        #cookieAccept {
+            padding: .6rem 1.4rem;
+            background: var(--forest);
+            color: var(--cream);
+            font-family: 'Jost', sans-serif;
+            font-size: .78rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            border: 1px solid var(--forest);
+            cursor: pointer;
+            transition: background .3s;
+        }
+
+        #cookieAccept:hover {
+            background: var(--terra);
+            border-color: var(--terra);
+        }
+
+        #cookieReject {
+            padding: .6rem 1.4rem;
+            background: transparent;
+            color: var(--forest);
+            font-family: 'Jost', sans-serif;
+            font-size: .78rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            border: 1px solid var(--forest);
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        #cookieReject:hover {
+            background: var(--forest);
+            color: var(--cream);
+        }
+
+        @media (max-width: 768px) {
+            #cookieBanner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
         }
 
         /* ── SCROLL REVEAL ── */
@@ -1428,9 +1513,9 @@
     <!-- MOBILE MENU -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#sobre" onclick="closeMobile()">Sobre Mim</a>
+        <a href="#abordagem" onclick="closeMobile()">Abordagem Terapêutica</a>
         <a href="#servicos" onclick="closeMobile()">Áreas de Intervenção</a>
-        <a href="#abordagem" onclick="closeMobile()">Abordagem</a>
-        <a href="#faq" onclick="closeMobile()">FAQ</a>
+        <a href="#processo" onclick="closeMobile()">Percurso Terapêutico</a>
         <a href="#contacto" onclick="closeMobile()" style="color:var(--terra)">Marcar Consulta</a>
     </div>
 
@@ -1439,9 +1524,9 @@
         <a href="#inicio" class="nav-logo">Raízes do <span>Eu</span></a>
         <ul class="nav-links">
             <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#abordagem">Abordagem Terapêutica</a></li>
             <li><a href="#servicos">Áreas de Intervenção</a></li>
-            <li><a href="#abordagem">Abordagem</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#processo">Percurso Terapêutico</a></li>
         </ul>
         <a href="#contacto" class="nav-cta">Marcar Consulta</a>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -1731,8 +1816,7 @@
             <div class="cont-info">
                 <p class="s-tag rv">Contacto</p>
                 <h2 class="rv d1">Vamos conversar</h2>
-                <p class="rv d2">Dê o primeiro passo. Envie uma mensagem, ligue ou envie um e-mail — responderei com
-                    brevidade para agendarmos uma consulta ou esclarecer qualquer dúvida.</p>
+                <p class="rv d2">Já teve a coragem de chegar até aqui. Este pode ser o momento certo para dar o próximo passo no cuidado da sua saúde mental e bem-estar emocional. Entre em contacto, estou aqui para o/a acompanhar.</p>
                 <div class="c-details rv d3">
                     <div class="c-item">
                         <div class="c-icon">↳</div>
@@ -1741,7 +1825,7 @@
                     </div>
                     <div class="c-item">
                         <div class="c-icon">T</div>
-                        <div class="c-text"><strong>Telefone / WhatsApp</strong>+351 912 345 678</div>
+                        <div class="c-text"><strong>Telefone / WhatsApp</strong>+351 926 548 572</div>
                     </div>
                     <div class="c-item">
                         <div class="c-icon">@</div>
@@ -1767,15 +1851,10 @@
                         <label for="servico">Área de interesse</label>
                         <select id="servico" name="servico">
                             <option value="">Seleccione...</option>
-                            <option>Autoconhecimento</option>
-                            <option>Desenvolvimento Pessoal</option>
-                            <option>Gestão Emocional</option>
-                            <option>Autoestima</option>
-                            <option>Adição e Comportamentos Dependentes</option>
-                            <option>Depressão</option>
-                            <option>Ansiedade</option>
-                            <option>Trauma</option>
-                            <option>Outra questão</option>
+                            <option>Presencial</option>
+                            <option>Online</option>
+                            <option>Acompanhamento com relatório terapêutico</option>
+                            <option>Terapia de casal</option>
                         </select>
                     </div>
                 </div>
@@ -1798,8 +1877,9 @@
             <div class="foot-logo">Filipa Vilhena <span>Martins</span></div>
             <div class="foot-links">
                 <a href="#sobre">Sobre Mim</a>
+                <a href="#abordagem">Abordagem Terapêutica</a>
                 <a href="#servicos">Áreas de Intervenção</a>
-                <a href="#abordagem">Abordagem</a>
+                <a href="#processo">Percurso Terapêutico</a>
                 <a href="#contacto">Contacto</a>
                 <a href="#">Política de Privacidade</a>
             </div>
@@ -1807,6 +1887,15 @@
         <p class="foot-legal">© 2026 Filipa Vilhena Martins — Psicóloga Clínica | Raízes do Eu. C.P. 23722 OPP. Todos os
             direitos reservados.</p>
     </footer>
+
+    <!-- COOKIE BANNER -->
+    <div id="cookieBanner" style="display:none">
+        <p>Este site utiliza cookies para análise anónima de visitas, com o objetivo de melhorar a experiência dos utilizadores. Pode aceitar ou recusar o uso de cookies não essenciais.</p>
+        <div class="cookie-btns">
+            <button id="cookieAccept">Aceitar Cookies</button>
+            <button id="cookieReject">Apenas Essenciais</button>
+        </div>
+    </div>
 
     <script>
         // Custom cursor
@@ -1862,11 +1951,6 @@
             });
         });
 
-        // Testimonial scroll
-        const track = document.getElementById('testTrack');
-        document.getElementById('tNext').addEventListener('click', () => track.scrollBy({ left: 380, behavior: 'smooth' }));
-        document.getElementById('tPrev').addEventListener('click', () => track.scrollBy({ left: -380, behavior: 'smooth' }));
-
         // Form submit
         document.getElementById('contForm').addEventListener('submit', e => {
             e.preventDefault();
@@ -1874,6 +1958,37 @@
             success.style.display = 'block';
             e.target.reset();
             setTimeout(() => { success.style.display = 'none'; }, 5000);
+        });
+
+        // Google Analytics loader
+        function loadAnalytics() {
+            const s = document.createElement('script');
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+            s.async = true;
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+        }
+
+        // Cookie consent logic
+        const consent = localStorage.getItem('cookie_consent');
+        if (consent === 'accepted') {
+            loadAnalytics();
+        } else if (!consent) {
+            document.getElementById('cookieBanner').style.display = 'flex';
+        }
+
+        document.getElementById('cookieAccept').addEventListener('click', () => {
+            localStorage.setItem('cookie_consent', 'accepted');
+            document.getElementById('cookieBanner').style.display = 'none';
+            loadAnalytics();
+        });
+
+        document.getElementById('cookieReject').addEventListener('click', () => {
+            localStorage.setItem('cookie_consent', 'rejected');
+            document.getElementById('cookieBanner').style.display = 'none';
         });
     </script>
 </body>
