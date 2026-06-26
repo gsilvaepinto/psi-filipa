@@ -114,34 +114,46 @@
             left: 0;
             right: 0;
             z-index: 200;
-            padding: 1.4rem 5%;
+            padding: 0.5rem 5%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            transition: background .4s, box-shadow .4s, backdrop-filter .4s;
+            justify-content: flex-start;
+            transition: background .4s, box-shadow .4s, backdrop-filter .4s, padding .4s;
         }
 
         #mainNav.scrolled {
             background: rgba(245, 240, 230, .92);
             backdrop-filter: blur(14px);
             box-shadow: 0 1px 0 var(--border);
+            padding: 0.3rem 5%;
+        }
+
+        #mainNav.scrolled .nav-logo img {
+            height: 100px;
         }
 
         .nav-logo {
             text-decoration: none;
             display: flex;
             align-items: center;
+            line-height: 0;
         }
 
         .nav-logo img {
-            height: 96px;
+            height: 140px;
             width: auto;
+            transition: height .4s ease;
+            margin-top: 12px;
         }
 
         .nav-links {
             display: flex;
             gap: 2.2rem;
             list-style: none;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .nav-links a {
@@ -166,6 +178,7 @@
             padding: .6rem 1.4rem;
             text-decoration: none;
             transition: background .3s;
+            margin-left: auto;
         }
 
         .nav-cta:hover {
@@ -180,6 +193,7 @@
             background: none;
             border: none;
             padding: 4px;
+            margin-left: auto;
         }
 
         .hamburger span {
@@ -225,7 +239,7 @@
             display: grid;
             grid-template-columns: 1.1fr .9fr;
             align-items: center;
-            padding: 8rem 5% 4rem;
+            padding: 11rem 5% 4rem;
             gap: 3rem;
             position: relative;
             overflow: hidden;
@@ -535,7 +549,7 @@
         /* ── SOBRE ── */
         #sobre {
             background: var(--cream);
-            scroll-margin-top: 7.5rem;
+            scroll-margin-top: 5rem;
         }
 
         .sobre-layout {
@@ -640,7 +654,7 @@
         /* ── ABORDAGEM ── */
         #abordagem {
             background: var(--cream2);
-            scroll-margin-top: 7.5rem;
+            scroll-margin-top: 5rem;
             padding-top: 3.5rem;
         }
 
@@ -693,7 +707,7 @@
         /* ── ÁREAS DE INTERVENÇÃO ── */
         #servicos {
             background: var(--cream);
-            scroll-margin-top: 7.5rem;
+            scroll-margin-top: 5rem;
             padding-top: 3.5rem;
         }
 
@@ -839,7 +853,7 @@
         /* ── PROCESSO ── */
         #processo {
             background: var(--cream2);
-            scroll-margin-top: 7.5rem;
+            scroll-margin-top: 5rem;
         }
 
         #processo .s-tag::before {
@@ -1108,7 +1122,7 @@
         /* ── CONTACTO ── */
         #contacto {
             background: #ffffff;
-            scroll-margin-top: 7.5rem;
+            scroll-margin-top: 5rem;
         }
 
         .cont-grid {
