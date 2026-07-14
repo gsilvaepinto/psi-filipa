@@ -4,11 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filipa Vilhena Martins — Psicóloga Clínica | Raízes do Eu | Guimarães</title>
+    <title>Filipa Vilhena Martins | Raízes do Eu | Guimarães</title>
     <meta name="description"
-        content="Filipa Vilhena Martins, Psicóloga Clínica (C.P. 23722). Consultas de psicologia online e presenciais em Guimarães. Especialização em Terapia Cognitivo-Comportamental, Adições, Ansiedade, Depressão e Trauma. Raízes do Eu.">
+        content="Filipa Vilhena Martins, Psicóloga (C.P. 23722). Consultas de psicologia online e presenciais em Guimarães. Especialização em Terapia Cognitivo-Comportamental, Adições, Ansiedade, Depressão e Trauma. Raízes do Eu.">
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- SEO -->
+    <meta name="author" content="Filipa Vilhena Martins">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+        content="psicóloga Guimarães, psicologia Guimarães, consultas psicologia online, terapia cognitivo-comportamental, ansiedade, depressão, trauma, adição, autoestima, autoconhecimento, terapia de casal, terapia familiar, gestão emocional, intervenção em crise, Filipa Vilhena Martins, Raízes do Eu, psicóloga presencial Guimarães">
+    <meta name="geo.region" content="PT-03">
+    <meta name="geo.placename" content="Guimarães, Portugal">
+    <meta name="theme-color" content="#386b47">
+    <link rel="canonical" href="https://raizesdoeu.com/">
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://raizesdoeu.pt/">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:site_name" content="Raízes do Eu — Psicóloga Filipa Vilhena Martins">
+    <meta property="og:title" content="Filipa Vilhena Martins| Raízes do Eu | Guimarães">
+    <meta property="og:description"
+        content="Consultas de psicologia online e presenciais em Guimarães. Terapia Cognitivo-Comportamental para Ansiedade, Depressão, Trauma, Adições e mais. Filipa Vilhena Martins, C.P. 23722.">
+    <meta property="og:image" content="https://raizesdoeu.pt/fotografia_filipa.jpeg">
+    <meta property="og:image:alt" content="Filipa Vilhena Martins — Psicóloga em Guimarães">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Filipa Vilhena Martins | Raízes do Eu | Guimarães">
+    <meta name="twitter:description"
+        content="Consultas de psicologia online e presenciais em Guimarães. Terapia Cognitivo-Comportamental para Ansiedade, Depressão, Trauma e Adições.">
+    <meta name="twitter:image" content="https://raizesdoeu.pt/fotografia_filipa.jpeg">
+    <meta name="twitter:image:alt" content="Filipa Vilhena Martins — Psicóloga em Guimarães">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -1513,12 +1543,22 @@
             }
         }
 
-        .desktop-only { display: inline; }
-        .mobile-only { display: none; }
+        .desktop-only {
+            display: inline;
+        }
+
+        .mobile-only {
+            display: none;
+        }
 
         @media (max-width: 768px) {
-            .desktop-only { display: none; }
-            .mobile-only { display: inline-block; }
+            .desktop-only {
+                display: none;
+            }
+
+            .mobile-only {
+                display: inline-block;
+            }
 
             nav {
                 padding: 1.1rem 5%;
@@ -1629,6 +1669,66 @@
             }
         }
     </style>
+
+    <!-- Dados Estruturados (Schema.org) — substituir o domínio pelo URL real -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://raizesdoeu.pt/#business",
+          "name": "Raízes do Eu",
+          "alternateName": "Raízes do Eu — Psicóloga Filipa Vilhena Martins",
+          "description": "Consultas de psicologia online e presenciais em Guimarães. Especialização em Terapia Cognitivo-Comportamental para Ansiedade, Depressão, Trauma, Adições, Terapia de Casal e Familiar.",
+          "url": "https://raizesdoeu.pt/",
+          "logo": "https://raizesdoeu.pt/logo.png",
+          "image": "https://raizesdoeu.pt/fotografia_filipa.jpeg",
+          "telephone": "+351926548572",
+          "email": "raizesdoeu.psicologia@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Avenida D. João IV, Centro Comercial Villa Loja nº 58",
+            "addressLocality": "Guimarães",
+            "postalCode": "4810-534",
+            "addressCountry": "PT"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "description": "Atendimento por marcação"
+          },
+          "priceRange": "€€",
+          "employee": { "@id": "https://raizesdoeu.pt/#filipa" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://raizesdoeu.pt/#filipa",
+          "name": "Filipa Vilhena Martins",
+          "jobTitle": "Psicóloga",
+          "description": "Psicóloga com mais de 10 anos de experiência. Especialização Avançada em Terapias Cognitivo-Comportamentais (Instituto CRIAP, 2023). Cédula Profissional OPP n.º C.P. 23722.",
+          "worksFor": { "@id": "https://raizesdoeu.pt/#business" },
+          "telephone": "+351926548572",
+          "email": "raizesdoeu.psicologia@gmail.com",
+          "url": "https://raizesdoeu.pt/",
+          "image": "https://raizesdoeu.pt/fotografia_filipa.jpeg",
+          "knowsAbout": [
+            "Terapia Cognitivo-Comportamental",
+            "Adições e Comportamentos Dependentes",
+            "Ansiedade",
+            "Depressão",
+            "Trauma",
+            "Terapia de Casal",
+            "Terapia Familiar",
+            "Desenvolvimento Pessoal",
+            "Autoestima e Autoconfiança",
+            "Regulação Emocional",
+            "Intervenção em Crise",
+            "Autoconhecimento"
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -1662,7 +1762,9 @@
     <section id="inicio">
         <div class="hero-text">
             <div class="ha ha1" style="margin-bottom:1.4rem; display:flex; flex-direction:column; gap:0.5rem;">
-                <span style="color:var(--terra); font-family:'Cormorant Upright',serif; font-size:1.6rem; font-weight:500; line-height:1.2;">Psicóloga Filipa Vilhena Martins</span>
+                <span
+                    style="color:var(--terra); font-family:'Cormorant Upright',serif; font-size:1.6rem; font-weight:500; line-height:1.2;">Psicóloga
+                    Filipa Vilhena Martins</span>
                 <span class="hero-badge">C.P. 23722</span>
             </div>
             <h1 class="hero-title ha ha2"><span style="white-space:nowrap">Compreender as raízes</span><br><span
@@ -1676,7 +1778,7 @@
             <div class="hero-img-wrap">
                 <div class="hero-deco-num">ψ</div>
                 <div class="hero-img-frame">
-                    <img src="fotografia_filipa.jpeg" alt="Filipa Vilhena Martins — Psicóloga Clínica">
+                    <img src="fotografia_filipa.jpeg" alt="Filipa Vilhena Martins — Psicóloga">
                 </div>
             </div>
         </div>
@@ -1696,7 +1798,8 @@
                 <div class="sobre-content">
                     <div class="sobre-head">
                         <p class="s-tag rv">Sobre Mim</p>
-                        <h2 class="rv d1">Uma psicóloga que o/a acompanha com<br class="desktop-only"> profissionalismo, empatia e respeito.</h2>
+                        <h2 class="rv d1">Uma psicóloga que o/a acompanha com<br class="desktop-only"> profissionalismo,
+                            empatia e respeito.</h2>
                     </div>
                     <p class="sobre-intro rv d2">Chamo-me <span style="color:var(--terra)">Filipa Vilhena
                             Martins</span>, nasci em Guimarães. Sou filha, neta, irmã mais nova, tia e mais recentemente
@@ -1807,7 +1910,9 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>A <span style="color:var(--terra);font-weight:500">adição</span> pode assumir diferentes formas e <span style="color:var(--terra);font-weight:500">comportamentos dependentes</span>. Pode ser física,
+                        <p>A <span style="color:var(--terra);font-weight:500">adição</span> pode assumir diferentes
+                            formas e <span style="color:var(--terra);font-weight:500">comportamentos dependentes</span>.
+                            Pode ser física,
                             envolvendo o consumo de substâncias que alteram o sistema nervoso e o humor, como o álcool e
                             as drogas psicotrópicas, ou comportamental, relacionada com o jogo, o trabalho, a
                             alimentação, entre outros.</p>
@@ -1827,7 +1932,8 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>A <span style="color:var(--terra);font-weight:500">ansiedade</span> caracteriza-se por uma preocupação excessiva, persistente e difícil de controlar.
+                        <p>A <span style="color:var(--terra);font-weight:500">ansiedade</span> caracteriza-se por uma
+                            preocupação excessiva, persistente e difícil de controlar.
                             Pode manifestar-se através de sintomas físicos (e.g., dores de cabeça, cansaço e alterações
                             do sono), sociais (e.g., evitar encontros ou situações sociais), ocupacionais (e.g.,
                             desinteresse pelos hobbies ou pelas atividades habituais) e, naturalmente, emocionais (e.g.,
@@ -1847,14 +1953,17 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>O <span style="color:var(--terra);font-weight:500">autoconhecimento</span> permite compreender melhor quem somos, o que valorizamos e a forma como
+                        <p>O <span style="color:var(--terra);font-weight:500">autoconhecimento</span> permite
+                            compreender melhor quem somos, o que valorizamos e a forma como
                             pensamos, sentimos e agimos. Este processo envolve explorar emoções, valores, necessidades,
                             motivações, características pessoais, pontos fortes, limitações e padrões de comportamento.
                         </p>
                         <p>Ao desenvolver maior consciência sobre si próprio/a, torna-se possível construir uma vida com
                             maior coerência e liberdade, fazendo escolhas mais alinhadas com as suas necessidades, em
                             vez de reagir apenas ao contexto ou às expectativas dos outros.</p>
-                        <p>O autoconhecimento é basilar para a construção da <span style="color:var(--terra);font-weight:500">inteligência emocional</span>, constituindo um
+                        <p>O autoconhecimento é basilar para a construção da <span
+                                style="color:var(--terra);font-weight:500">inteligência emocional</span>, constituindo
+                            um
                             processo contínuo e transformador, essencial para viver em harmonia consigo próprio/a, com
                             os outros e com o meio que o rodeia</p>
                     </div>
@@ -1867,7 +1976,8 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>O <span style="color:var(--terra);font-weight:500">desenvolvimento pessoal</span> não consiste em procurar a perfeição, mas sim em trabalhar, ao
+                        <p>O <span style="color:var(--terra);font-weight:500">desenvolvimento pessoal</span> não
+                            consiste em procurar a perfeição, mas sim em trabalhar, ao
                             ritmo de cada pessoa, na construção de uma versão mais consciente, equilibrada e funcional
                             de si próprio/a.</p>
                         <p>Este processo não se destina apenas a quem enfrenta dificuldades, mas a qualquer pessoa que
@@ -1885,10 +1995,12 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>A <span style="color:var(--terra);font-weight:500">autoestima</span> consiste em reconhecer as próprias qualidades e limitações, aceitando-as com
+                        <p>A <span style="color:var(--terra);font-weight:500">autoestima</span> consiste em reconhecer
+                            as próprias qualidades e limitações, aceitando-as com
                             compaixão e respeito por si próprio/a. Neste processo, construiremos uma relação mais
                             saudável consigo próprio/a, baseada no respeito, aceitação e compaixão.</p>
-                        <p>A <span style="color:var(--terra);font-weight:500">autoconfiança</span> constrói-se através da capacidade de reconhecer que os erros e dificuldades
+                        <p>A <span style="color:var(--terra);font-weight:500">autoconfiança</span> constrói-se através
+                            da capacidade de reconhecer que os erros e dificuldades
                             fazem parte do percurso de vida, sem comprometer o nosso valor pessoal.</p>
                         <p>Promover a autoestima e a autoconfiança permite enfrentar desafios com maior segurança e
                             estabelecer uma relação mais positiva consigo próprio/a.</p>
@@ -1902,7 +2014,8 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>A <span style="color:var(--terra);font-weight:500">depressão</span> está frequentemente associada a um acontecimento precipitante, habitualmente
+                        <p>A <span style="color:var(--terra);font-weight:500">depressão</span> está frequentemente
+                            associada a um acontecimento precipitante, habitualmente
                             relacionado com perda. Os sintomas mais predominantes são o humor deprimido ou irritável e a
                             diminuição ou ausência de afeto positivo.</p>
                         <p>Os sintomas emocionais podem incluir sentimentos de culpa, desvalorização, desamparo e falta
@@ -1927,7 +2040,8 @@
                     </div>
                     <div class="serv-block-body">
                         <p>As emoções fazem parte da experiência humana e não existem emoções "boas" ou "más"; existem
-                            formas mais ou menos ajustadas de lidar com aquilo que sentimos.<br>A <span style="color:var(--terra);font-weight:500">gestão emocional</span>
+                            formas mais ou menos ajustadas de lidar com aquilo que sentimos.<br>A <span
+                                style="color:var(--terra);font-weight:500">gestão emocional</span>
                             envolve aprender a reconhecer, compreender e aceitar as próprias emoções, desenvolvendo
                             formas mais equilibradas de as gerir e expressar.</p>
                         <p>Desta forma, será possível responder com maior consciência, equilíbrio e capacidade de
@@ -1942,7 +2056,8 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>A <span style="color:var(--terra);font-weight:500">terapia familiar</span> é uma forma de psicoterapia que envolve, em simultâneo, vários elementos
+                        <p>A <span style="color:var(--terra);font-weight:500">terapia familiar</span> é uma forma de
+                            psicoterapia que envolve, em simultâneo, vários elementos
                             da família, com o objetivo de melhorar a comunicação, resolver conflitos ou situações de
                             crise e fortalecer as relações familiares.</p>
                         <p>O objetivo não é encontrar culpados, mas compreender os padrões de funcionamento da família e
@@ -1957,7 +2072,8 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>A <span style="color:var(--terra);font-weight:500">terapia de casal</span> é uma forma de psicoterapia realizada com duas pessoas que, mantêm uma
+                        <p>A <span style="color:var(--terra);font-weight:500">terapia de casal</span> é uma forma de
+                            psicoterapia realizada com duas pessoas que, mantêm uma
                             relação amorosa, com o objetivo de melhorar a relação, resolver conflitos e fortalecer a
                             ligação emocional.</p>
                         <p>Não se destina apenas a "casais em crise", podendo também ter um carácter preventivo,
@@ -1975,7 +2091,8 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>O <span style="color:var(--terra);font-weight:500">trauma</span> pode resultar de diversos acontecimentos que, ameaçam a vida ou a segurança da
+                        <p>O <span style="color:var(--terra);font-weight:500">trauma</span> pode resultar de diversos
+                            acontecimentos que, ameaçam a vida ou a segurança da
                             pessoa, de forma direta ou indireta, como agressões, guerra, violação, acidentes graves,
                             morte ou abuso. Geralmente, trata-se de uma experiência repentina e inesperada, que provoca
                             um forte impacto emocional, podendo ter uma duração curta ou prolongada.</p>
@@ -1992,7 +2109,8 @@
                         <div class="serv-block-tog"></div>
                     </div>
                     <div class="serv-block-body">
-                        <p>A <span style="color:var(--terra);font-weight:500">intervenção em crise</span> consiste numa resposta rápida e de curta duração, destinada a ajudar a
+                        <p>A <span style="color:var(--terra);font-weight:500">intervenção em crise</span> consiste numa
+                            resposta rápida e de curta duração, destinada a ajudar a
                             pessoa a lidar com uma situação emocionalmente intensa, na qual o equilíbrio psicológico e
                             emocional se encontra temporariamente comprometido após um acontecimento marcante (e.g., uma
                             situação de abuso ou um ataque de ansiedade).</p>
@@ -2056,7 +2174,8 @@
                 <div class="c-details rv d3">
                     <div class="c-item">
                         <div class="c-icon">↳</div>
-                        <div class="c-text"><strong>Localização</strong>Avenida D. João IV, Centro Comercial Villa Loja nº 58<br>4810-534 Guimarães</div>
+                        <div class="c-text"><strong>Localização</strong>Avenida D. João IV, Centro Comercial Villa Loja
+                            nº 58<br>4810-534 Guimarães</div>
                     </div>
                     <div class="c-item">
                         <div class="c-icon">T</div>
@@ -2073,6 +2192,9 @@
                 </div>
             </div>
             <form class="cont-form rv" id="contForm" novalidate>
+                <input type="hidden" name="access_key" value="56abc304-072d-4a6b-862e-c3c323664d4d">
+                <input type="hidden" name="subject" value="Nova mensagem — Raízes do Eu">
+                <input type="hidden" name="from_name" value="Raízes do Eu — Website">
                 <div class="form-row">
                     <div class="fg"><label for="nome">Nome</label><input type="text" id="nome" name="nome"
                             placeholder="O seu nome" required></div>
@@ -2185,13 +2307,36 @@
             });
         });
 
-        // Form submit
-        document.getElementById('contForm').addEventListener('submit', e => {
+        // Form submit via Web3Forms
+        document.getElementById('contForm').addEventListener('submit', async e => {
             e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('.btn-send');
             const success = document.getElementById('fSuccess');
-            success.style.display = 'block';
-            e.target.reset();
-            setTimeout(() => { success.style.display = 'none'; }, 5000);
+
+            btn.disabled = true;
+            btn.textContent = 'A enviar...';
+
+            const data = new FormData(form);
+            try {
+                const res = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: data
+                });
+                const json = await res.json();
+                if (json.success) {
+                    success.style.display = 'block';
+                    form.reset();
+                    setTimeout(() => { success.style.display = 'none'; }, 6000);
+                } else {
+                    alert('Erro ao enviar a mensagem. Por favor tente novamente ou contacte por e-mail.');
+                }
+            } catch {
+                alert('Sem ligação. Por favor tente novamente.');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Enviar Mensagem';
+            }
         });
 
         // Google Analytics loader
