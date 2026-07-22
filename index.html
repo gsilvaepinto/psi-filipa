@@ -1726,6 +1726,15 @@
                 align-items: center;
             }
 
+            .foot-seal {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .foot-seal img {
+                height: 70px;
+            }
+
             .foot-legal {
                 text-align: center;
             }
@@ -2295,7 +2304,7 @@
                         consinto o tratamento dos
                         meus dados pessoais para efeitos de resposta ao presente contacto, nos termos do RGPD.</label>
                 </div>
-                <button type="submit" class="btn-send">Solicitar Contacto</button>
+                <button type="submit" class="btn-send">Vamos conversar?</button>
                 <div class="form-success" id="fSuccess">✓ Pedido enviado com sucesso. Responderei em breve!</div>
                 <div class="form-error" id="fError">✕ Por favor aceite a Política de Privacidade antes de enviar.</div>
             </form>
@@ -2381,7 +2390,8 @@
                     <p>Os dados recolhidos têm como única finalidade responder ao contacto solicitado e, quando
                         aplicável, proceder ao agendamento de consultas. A base jurídica do tratamento é o
                         <strong>consentimento do titular</strong> (art.º 6.º, n.º 1, al. a) do RGPD), prestado através
-                        da marcação da caixa de verificação no formulário.</p>
+                        da marcação da caixa de verificação no formulário.
+                    </p>
                 </div>
                 <div>
                     <h3
@@ -2535,7 +2545,7 @@
                 alert('Sem ligação. Por favor tente novamente.');
             } finally {
                 btn.disabled = false;
-                btn.textContent = 'Solicitar Contacto';
+                btn.textContent = 'Vamos conversar?';
             }
         });
 
