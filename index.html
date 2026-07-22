@@ -1396,12 +1396,15 @@
             display: flex;
             align-items: center;
             line-height: 0;
+            padding: 0;
+            margin: 0;
         }
 
         .foot-seal img {
             height: 90px;
             width: auto;
             display: block;
+            vertical-align: middle;
         }
 
         .foot-legal {
@@ -1735,11 +1738,17 @@
 
             .foot-seal {
                 justify-content: center;
-                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .foot-seal > img,
+            .foot-seal > a {
+                height: 60px;
+                align-self: center;
             }
 
             .foot-seal img {
-                height: 70px;
+                height: 60px;
             }
 
             .foot-legal {
