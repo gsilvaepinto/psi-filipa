@@ -575,7 +575,7 @@
         /* ── SOBRE ── */
         #sobre {
             background: var(--cream);
-            scroll-margin-top: 11rem;
+            scroll-margin-top: 7rem;
         }
 
         .sobre-layout {
@@ -680,7 +680,7 @@
         /* ── ABORDAGEM ── */
         #abordagem {
             background: var(--cream2);
-            scroll-margin-top: 11rem;
+            scroll-margin-top: 7rem;
             padding-top: 3.5rem;
         }
 
@@ -733,7 +733,7 @@
         /* ── ÁREAS DE INTERVENÇÃO ── */
         #servicos {
             background: var(--cream);
-            scroll-margin-top: 11rem;
+            scroll-margin-top: 7rem;
             padding-top: 3.5rem;
         }
 
@@ -879,7 +879,7 @@
         /* ── PROCESSO ── */
         #processo {
             background: var(--cream2);
-            scroll-margin-top: 11rem;
+            scroll-margin-top: 7rem;
         }
 
         #processo .s-tag::before {
@@ -1148,7 +1148,7 @@
         /* ── CONTACTO ── */
         #contacto {
             background: #ffffff;
-            scroll-margin-top: 11rem;
+            scroll-margin-top: 7rem;
         }
 
         .cont-grid {
@@ -1321,6 +1321,14 @@
             font-size: .85rem;
         }
 
+        .form-error {
+            display: none;
+            padding: .9rem 1rem;
+            background: #c0392b;
+            color: white;
+            font-size: .85rem;
+        }
+
         /* ── FOOTER ── */
         footer {
             background: var(--txt);
@@ -1333,7 +1341,7 @@
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             flex-wrap: wrap;
             gap: 1.4rem;
         }
@@ -1367,13 +1375,47 @@
             color: var(--terra2);
         }
 
-        .foot-legal {
-            font-size: .72rem;
-            width: 100%;
-            text-align: center;
+        .foot-bottom {
+            max-width: 1200px;
+            margin: 1.4rem auto 0;
             padding-top: 1.4rem;
             border-top: 1px solid rgba(255, 255, 255, .1);
-            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.4rem;
+        }
+
+        .foot-seal {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .foot-seal img {
+            height: 90px;
+            width: auto;
+        }
+
+        .foot-legal {
+            font-size: .72rem;
+            text-align: right;
+        }
+
+        .cont-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.4rem;
+        }
+
+        .cont-social a {
+            color: var(--forest);
+            transition: color .3s;
+            line-height: 0;
+        }
+
+        .cont-social a:hover {
+            color: var(--terra2);
         }
 
         /* ── COOKIE BANNER ── */
@@ -1666,6 +1708,15 @@
 
             .form-row {
                 grid-template-columns: 1fr;
+            }
+
+            .foot-bottom {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .foot-legal {
+                text-align: center;
             }
         }
     </style>
@@ -2190,6 +2241,14 @@
                         <div class="c-text"><strong>Horários</strong>Atendimento por marcação</div>
                     </div>
                 </div>
+                <div class="cont-social rv d4">
+                    <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="https://wa.me/351926548572" aria-label="WhatsApp" target="_blank" rel="noopener">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.114 1.522 5.843L.036 23.55a.5.5 0 0 0 .608.625l5.92-1.516A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.032-1.373l-.36-.214-3.733.956.991-3.624-.235-.373A9.862 9.862 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/></svg>
+                    </a>
+                </div>
             </div>
             <form class="cont-form rv" id="contForm" novalidate>
                 <input type="hidden" name="access_key" value="56abc304-072d-4a6b-862e-c3c323664d4d">
@@ -2215,15 +2274,14 @@
                         </select>
                     </div>
                 </div>
-                <div class="fg"><label for="msg">Mensagem</label><textarea id="msg" name="msg"
-                        placeholder="Descreva brevemente o que o traz aqui..."></textarea></div>
                 <div class="form-check">
                     <input type="checkbox" id="rgpd" name="rgpd" required>
                     <label for="rgpd">Li e aceito a <a href="#">Política de Privacidade</a> e consinto o tratamento dos
                         meus dados pessoais para efeitos de resposta ao presente contacto, nos termos do RGPD.</label>
                 </div>
-                <button type="submit" class="btn-send">Enviar Mensagem</button>
-                <div class="form-success" id="fSuccess">✓ Mensagem enviada com sucesso. Responderei em breve!</div>
+                <button type="submit" class="btn-send">Solicitar Contacto</button>
+                <div class="form-success" id="fSuccess">✓ Pedido enviado com sucesso. Responderei em breve!</div>
+                <div class="form-error" id="fError">✕ Por favor aceite a Política de Privacidade antes de enviar.</div>
             </form>
         </div>
     </section>
@@ -2237,10 +2295,16 @@
                 <a href="#servicos">Áreas de Intervenção</a>
                 <a href="#processo">Abordagem Terapêutica</a>
                 <a href="#">Política de Privacidade</a>
+                <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener">Livro de Reclamações</a>
             </div>
         </div>
-        <p class="foot-legal">© 2026 Filipa Vilhena Martins — Psicóloga | Raízes do Eu. C.P. 23722 OPP. Todos os
-            direitos reservados.</p>
+        <div class="foot-bottom">
+            <div class="foot-seal">
+                <img src="ordem_filipa.jpeg" alt="Ordem dos Psicólogos Portugueses">
+                <img src="ERS.jpeg" alt="ERS">
+            </div>
+            <p class="foot-legal">© 2026 Filipa Vilhena Martins — Psicóloga | Raízes do Eu. C.P. 23722 OPP. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <!-- COOKIE BANNER -->
@@ -2313,6 +2377,14 @@
             const form = e.target;
             const btn = form.querySelector('.btn-send');
             const success = document.getElementById('fSuccess');
+            const error = document.getElementById('fError');
+
+            if (!form.querySelector('#rgpd').checked) {
+                error.style.display = 'block';
+                setTimeout(() => { error.style.display = 'none'; }, 5000);
+                return;
+            }
+            error.style.display = 'none';
 
             btn.disabled = true;
             btn.textContent = 'A enviar...';
@@ -2335,7 +2407,7 @@
                 alert('Sem ligação. Por favor tente novamente.');
             } finally {
                 btn.disabled = false;
-                btn.textContent = 'Enviar Mensagem';
+                btn.textContent = 'Solicitar Contacto';
             }
         });
 
