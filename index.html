@@ -18,7 +18,7 @@
     <meta name="geo.region" content="PT-03">
     <meta name="geo.placename" content="Guimarães, Portugal">
     <meta name="theme-color" content="#386b47">
-    <link rel="canonical" href="https://raizesdoeu.com/">
+    <link rel="canonical" href="https://raizesdoeu.pt/">
 
     <!-- Open Graph / Redes Sociais -->
     <meta property="og:type" content="website">
@@ -205,7 +205,7 @@
             text-transform: uppercase;
             color: var(--cream);
             background: var(--forest);
-            padding: .6rem 1.4rem;
+            padding: .75rem 1.8rem;
             text-decoration: none;
             transition: background .3s;
             margin-left: auto;
@@ -1331,8 +1331,8 @@
 
         /* ── FOOTER ── */
         footer {
-            background: var(--txt);
-            color: rgba(255, 255, 255, .45);
+            background: var(--cream2);
+            color: var(--txt2);
             padding: 2.8rem 5%;
         }
 
@@ -1349,7 +1349,7 @@
         .foot-logo {
             font-family: 'Cormorant Upright', serif;
             font-size: 1.15rem;
-            color: rgba(255, 255, 255, .8);
+            color: var(--txt);
         }
 
         .foot-logo span {
@@ -1366,7 +1366,7 @@
             font-size: .72rem;
             letter-spacing: .1em;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 1);
+            color: var(--txt2);
             text-decoration: none;
             transition: color .3s;
         }
@@ -1376,14 +1376,13 @@
         }
 
         .foot-bottom {
-            max-width: 1200px;
             margin: 1.4rem auto 0;
             padding-top: 1.4rem;
-            border-top: 1px solid rgba(255, 255, 255, .1);
+            border-top: 1px solid var(--border);
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            gap: 1.4rem;
+            gap: 1rem;
         }
 
         .foot-seal {
@@ -1401,16 +1400,20 @@
         }
 
         .foot-seal img {
-            height: 90px;
+            height: 140px;
             width: auto;
             display: block;
             vertical-align: middle;
         }
 
+        .foot-seal > img {
+            height: 160px;
+        }
+
         .foot-legal {
             font-size: .72rem;
-            text-align: right;
-            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            color: var(--txt2);
         }
 
         .cont-social {
@@ -1430,13 +1433,13 @@
         }
 
         .foot-icon {
-            color: #ffffff;
+            color: var(--txt2);
             line-height: 0;
             transition: color .3s;
         }
 
         .foot-icon:hover {
-            color: var(--forest);
+            color: var(--terra);
         }
 
         /* ── COOKIE BANNER ── */
@@ -1741,14 +1744,14 @@
                 align-items: center;
             }
 
-            .foot-seal > img,
-            .foot-seal > a {
-                height: 60px;
+            .foot-seal>img,
+            .foot-seal>a {
+                height: 90px;
                 align-self: center;
             }
 
             .foot-seal img {
-                height: 60px;
+                height: 90px;
             }
 
             .foot-legal {
@@ -2304,13 +2307,12 @@
                     <div class="fg"><label for="tel">Telefone (opcional)</label><input type="tel" id="tel" name="tel"
                             placeholder="+351 9XX XXX XXX"></div>
                     <div class="fg">
-                        <label for="servico">Área de interesse</label>
+                        <label for="servico">Motivo do Contacto</label>
                         <select id="servico" name="servico">
-                            <option value="">Seleccione...</option>
-                            <option>Presencial</option>
-                            <option>Online</option>
-                            <option>Acompanhamento com relatório terapêutico</option>
-                            <option>Terapia de casal</option>
+                            <option value="">Selecione...</option>
+                            <option>Marcação de consulta presencial</option>
+                            <option>Marcação de consulta online</option>
+                            <option>Pedido de informações</option>
                         </select>
                     </div>
                 </div>
@@ -2320,7 +2322,7 @@
                         consinto o tratamento dos
                         meus dados pessoais para efeitos de resposta ao presente contacto, nos termos do RGPD.</label>
                 </div>
-                <button type="submit" class="btn-send">Vamos conversar?</button>
+                <button type="submit" class="btn-send">Vamos conversar</button>
                 <div class="form-success" id="fSuccess">✓ Pedido enviado com sucesso. Responderei em breve!</div>
                 <div class="form-error" id="fError">✕ Por favor aceite a Política de Privacidade antes de enviar.</div>
             </form>
@@ -2357,8 +2359,8 @@
         </div>
         <div class="foot-bottom">
             <div class="foot-seal">
-                <img src="ordem_filipa.jpeg" alt="Ordem dos Psicólogos Portugueses">
-                <a href="https://www.ers.pt/pt/" target="_blank" rel="noopener"><img src="ERS.jpeg" alt="ERS"></a>
+                <img src="pngs/Identificador_psicologa.png" alt="Ordem dos Psicólogos Portugueses">
+                <a href="Documentos/CertidãoRegisto.pdf" target="_blank" rel="noopener" aria-label="Ver certidão de registo ERS"><img src="pngs/ERS.png" alt="ERS"></a>
             </div>
             <p class="foot-legal">© 2026 Filipa Vilhena Martins — Psicóloga | Raízes do Eu. C.P. 23722 OPP. Todos os
                 direitos reservados.</p>
@@ -2608,6 +2610,46 @@
             document.getElementById('cookieBanner').style.display = 'none';
         });
     </script>
+
+    <!-- BOTÕES FLUTUANTES -->
+    <div class="social-float">
+<a href="https://wa.me/351926548572" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-float-btn">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.114 1.522 5.843L.036 23.55a.5.5 0 0 0 .608.625l5.92-1.516A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.032-1.373l-.36-.214-3.733.956.991-3.624-.235-.373A9.862 9.862 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+            </svg>
+        </a>
+    </div>
+
+    <style>
+        .social-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+        }
+
+        .social-float-btn {
+            width: 56px;
+            height: 56px;
+            background: var(--forest);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,.18);
+            transition: transform .3s, box-shadow .3s;
+        }
+
+        .social-float-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 22px rgba(0,0,0,.25);
+        }
+    </style>
 </body>
 
 </html>
