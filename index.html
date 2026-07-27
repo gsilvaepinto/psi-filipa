@@ -2637,11 +2637,12 @@
         }
 
         @media (max-width: 768px) {
-            #waFloat.visible {
+            #waFloat {
                 opacity: 0.5;
+                transition: right .4s ease, transform .3s, box-shadow .3s, opacity .3s;
             }
 
-            #waFloat.visible:active {
+            #waFloat:active {
                 opacity: 1;
             }
         }
