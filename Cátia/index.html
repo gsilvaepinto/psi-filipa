@@ -1,0 +1,2828 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipa Vilhena Martins | Raízes do Eu | Guimarães</title>
+    <meta name="description"
+        content="Filipa Vilhena Martins, Psicóloga (C.P. 23722). Consultas de psicologia online e presenciais em Guimarães. Especialização em Terapia Cognitivo-Comportamental, Adições, Ansiedade, Depressão e Trauma. Raízes do Eu.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- SEO -->
+    <meta name="author" content="Filipa Vilhena Martins">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+        content="psicóloga Guimarães, psicologia Guimarães, psicologa guimarares, psicologo guimarares, psicóloga Guimarães, psicólogo Guimarães, consultas psicologia online, terapia cognitivo-comportamental, ansiedade, depressão, trauma, adição, autoestima, autoconhecimento, terapia de casal, terapia familiar, gestão emocional, intervenção em crise, Filipa Vilhena Martins, Raízes do Eu, psicóloga presencial Guimarães">
+    <meta name="geo.region" content="PT-03">
+    <meta name="geo.placename" content="Guimarães, Portugal">
+    <meta name="theme-color" content="#621708">
+    <link rel="canonical" href="https://raizesdoeu.pt/">
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://raizesdoeu.pt/">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:site_name" content="Raízes do Eu — Psicóloga Filipa Vilhena Martins">
+    <meta property="og:title" content="Filipa Vilhena Martins| Raízes do Eu | Guimarães">
+    <meta property="og:description"
+        content="Consultas de psicologia online e presenciais em Guimarães. Terapia Cognitivo-Comportamental para Ansiedade, Depressão, Trauma, Adições e mais. Filipa Vilhena Martins, C.P. 23722.">
+    <meta property="og:image" content="https://raizesdoeu.pt/fotografia_filipa.jpeg">
+    <meta property="og:image:alt" content="Filipa Vilhena Martins — Psicóloga em Guimarães">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Filipa Vilhena Martins | Raízes do Eu | Guimarães">
+    <meta name="twitter:description"
+        content="Consultas de psicologia online e presenciais em Guimarães. Terapia Cognitivo-Comportamental para Ansiedade, Depressão, Trauma e Adições.">
+    <meta name="twitter:image" content="https://raizesdoeu.pt/fotografia_filipa.jpeg">
+    <meta name="twitter:image:alt" content="Filipa Vilhena Martins — Psicóloga em Guimarães">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --cream: #faf3e8;
+            --cream2: #f0e4cc;
+            --cream3: #e0cfb5;
+            --forest: #621708;
+            --forest2: #941B0C;
+            --terra: #BC3908;
+            --terra2: #F6AA1C;
+            --sage: #941B0C;
+            --gold: #F6AA1C;
+            --txt: #220901;
+            --txt2: #4a1c10;
+            --txt3: #8a5a4e;
+            --border: #d8c5af;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--cream);
+            color: var(--txt);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            overflow-x: hidden;
+            overscroll-behavior: none;
+            touch-action: pan-y;
+            max-width: 100vw;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Cormorant Upright', serif;
+            font-weight: 400;
+            line-height: 1.1;
+        }
+
+        /* ── CURSOR ── */
+        .cursor-dot {
+            position: fixed;
+            width: 6px;
+            height: 6px;
+            background: var(--terra);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width .25s, height .25s, background .25s;
+        }
+
+        .cursor-ring {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--terra);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            opacity: .45;
+            transition: width .3s, height .3s, opacity .3s;
+        }
+
+        .cursor-dot.hov {
+            width: 4px;
+            height: 4px;
+            background: var(--forest);
+        }
+
+        .cursor-ring.hov {
+            width: 46px;
+            height: 46px;
+            opacity: .2;
+            border-color: var(--forest);
+        }
+
+        @media (hover: none) {
+
+            .cursor-dot,
+            .cursor-ring {
+                display: none;
+            }
+        }
+
+        /* ── NAV ── */
+        #mainNav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            padding: 0.5rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: background .4s, box-shadow .4s, backdrop-filter .4s, padding .4s;
+        }
+
+        #mainNav.scrolled {
+            background: rgba(250, 243, 232, .94);
+            backdrop-filter: blur(14px);
+            box-shadow: 0 1px 0 var(--border);
+            padding: 0.3rem 5%;
+        }
+
+        #mainNav.scrolled .nav-logo img {
+            height: 100px;
+        }
+
+        .nav-logo {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            line-height: 0;
+        }
+
+        .nav-logo img {
+            height: 140px;
+            width: auto;
+            transition: height .4s ease;
+            margin-top: 12px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.2rem;
+            list-style: none;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-links a {
+            font-size: .78rem;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--txt2);
+            text-decoration: none;
+            transition: color .3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--terra);
+        }
+
+        .nav-cta {
+            font-size: .78rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--cream);
+            background: var(--forest);
+            padding: .75rem 1.8rem;
+            text-decoration: none;
+            transition: background .3s;
+            margin-left: auto;
+        }
+
+        .nav-cta:hover {
+            background: var(--terra);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px;
+            margin-left: auto;
+        }
+
+        .hamburger span {
+            width: 22px;
+            height: 1px;
+            background: var(--txt);
+            display: block;
+            transition: all .3s;
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: var(--cream);
+            z-index: 190;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.4rem;
+        }
+
+        .mobile-menu.open {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            font-family: 'Cormorant Upright', serif;
+            font-size: 2.2rem;
+            color: var(--forest);
+            text-decoration: none;
+            transition: color .3s;
+        }
+
+        .mobile-menu a:hover {
+            color: var(--terra);
+        }
+
+        /* ── HERO ── */
+        #inicio {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            align-items: center;
+            padding: 14rem 5% 4rem;
+            gap: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg-glyph {
+            position: absolute;
+            bottom: -4rem;
+            left: -2rem;
+            font-family: 'Cormorant Upright', serif;
+            font-size: clamp(14rem, 28vw, 26rem);
+            color: rgba(188, 57, 8, .07);
+            font-weight: 300;
+            line-height: 1;
+            pointer-events: none;
+            user-select: none;
+            z-index: 0;
+            opacity: .7;
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 2;
+            max-width: 720px;
+        }
+
+        .hero-tag {
+            font-size: .72rem;
+            letter-spacing: .22em;
+            text-transform: uppercase;
+            color: var(--terra);
+            margin-bottom: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: .9rem;
+        }
+
+        .hero-tag::before {
+            content: '';
+            width: 2rem;
+            height: 1px;
+            background: var(--terra);
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.6rem);
+            color: var(--forest);
+            margin-bottom: 1.4rem;
+        }
+
+        .hero-title em {
+            font-style: italic;
+            color: var(--terra);
+        }
+
+        .hero-sub {
+            font-size: .98rem;
+            color: var(--txt2);
+            line-height: 1.8;
+            max-width: 560px;
+            margin-bottom: 2.4rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .btn-p {
+            padding: .9rem 2rem;
+            background: var(--forest);
+            color: var(--cream);
+            font-family: 'Montserrat', sans-serif;
+            font-size: .78rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid var(--forest);
+            transition: all .3s;
+            display: inline-block;
+        }
+
+        .btn-p:hover {
+            background: var(--terra);
+            border-color: var(--terra);
+        }
+
+        .btn-o {
+            padding: .9rem 2rem;
+            background: transparent;
+            color: var(--forest);
+            font-family: 'Montserrat', sans-serif;
+            font-size: .78rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid var(--forest);
+            transition: all .3s;
+            display: inline-block;
+        }
+
+        .btn-o:hover {
+            background: var(--forest);
+            color: var(--cream);
+        }
+
+        .hero-badge {
+            font-size: .72rem;
+            color: var(--txt3);
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .hero-badge::before {
+            content: '✦';
+            color: var(--gold);
+        }
+
+        /* Hero visual */
+        .hero-visual {
+            z-index: 1;
+            align-self: center;
+            transform: translate(-3rem, -2rem);
+        }
+
+        .hero-img-wrap {
+            width: 100%;
+            position: relative;
+        }
+
+        .hero-img-wrap::after {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            border: 1px solid rgba(188, 57, 8, 0.2);
+            animation: blob-morph-b 11s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .hero-img-frame {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            overflow: hidden;
+            border: 1px solid rgba(188, 57, 8, 0.45);
+            animation: blob-morph 16s ease-in-out infinite;
+        }
+
+        .hero-img-frame img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        @keyframes blob-morph {
+
+            0%,
+            100% {
+                border-radius: 60% 40% 55% 45% / 55% 45% 60% 40%;
+            }
+
+            25% {
+                border-radius: 45% 55% 40% 60% / 60% 40% 55% 45%;
+            }
+
+            50% {
+                border-radius: 55% 45% 60% 40% / 40% 60% 45% 55%;
+            }
+
+            75% {
+                border-radius: 40% 60% 45% 55% / 50% 55% 40% 60%;
+            }
+        }
+
+        @keyframes blob-morph-b {
+
+            0%,
+            100% {
+                border-radius: 40% 60% 70% 30% / 50% 60% 40% 50%;
+            }
+
+            30% {
+                border-radius: 70% 30% 45% 55% / 35% 65% 55% 45%;
+            }
+
+            60% {
+                border-radius: 50% 50% 30% 70% / 65% 35% 70% 30%;
+            }
+        }
+
+        .img-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .6rem;
+            color: var(--txt3);
+            font-size: .72rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+
+        .img-placeholder svg {
+            opacity: .3;
+        }
+
+        .hero-deco-num {
+            display: none;
+        }
+
+        .hero-stats {
+            position: absolute;
+            bottom: -1.2rem;
+            left: -2rem;
+            background: var(--terra2);
+            color: var(--txt);
+            padding: 1.4rem 1.8rem;
+        }
+
+        .hero-stats-n {
+            font-family: 'Cormorant Upright', serif;
+            font-size: 2.4rem;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        .hero-stats-l {
+            font-size: .68rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            opacity: .65;
+            margin-top: .2rem;
+        }
+
+        /* Hero load animations */
+        .ha {
+            opacity: 0;
+            transform: translateY(28px);
+            animation: haIn .8s ease forwards;
+        }
+
+        .ha1 {
+            animation-delay: .1s;
+        }
+
+        .ha2 {
+            animation-delay: .25s;
+        }
+
+        .ha3 {
+            animation-delay: .4s;
+        }
+
+        .ha4 {
+            animation-delay: .55s;
+        }
+
+        .ha5 {
+            animation-delay: .7s;
+        }
+
+        .hero-visual {
+            animation: hvIn 1.2s ease .3s both;
+        }
+
+        @keyframes haIn {
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        @keyframes hvIn {
+            from {
+                opacity: 0;
+                transform: translateX(28px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* ── QUOTE BANNER ── */
+        .quote-banner {
+            background: var(--forest);
+            padding: 5rem 8%;
+            text-align: center;
+        }
+
+        .quote-txt {
+            font-family: 'Cormorant Upright', serif;
+            font-size: clamp(1.7rem, 4vw, 3.2rem);
+            font-weight: 300;
+            font-style: italic;
+            line-height: 1.45;
+            color: var(--cream);
+            max-width: 820px;
+            margin: 0 auto 1.2rem;
+        }
+
+        .quote-attr {
+            font-size: .72rem;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .4);
+        }
+
+        /* ── SHARED SECTION UTILS ── */
+        .section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: clamp(4rem, 7vw, 6rem) 5%;
+        }
+
+        .s-tag {
+            font-size: .95rem;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--terra);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+        }
+
+        .s-tag::before {
+            content: '';
+            width: 1.4rem;
+            height: 1px;
+            background: var(--terra);
+            flex-shrink: 0;
+        }
+
+        /* ── SOBRE ── */
+        #sobre {
+            background: var(--cream);
+            scroll-margin-top: 7rem;
+        }
+
+        .sobre-layout {
+            display: block;
+        }
+
+        .sobre-photo {
+            position: sticky;
+            top: 11rem;
+            aspect-ratio: 3/4;
+            background: var(--cream2);
+            overflow: hidden;
+        }
+
+        .sobre-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .sobre-photo .img-placeholder {
+            height: 100%;
+        }
+
+        .sobre-head {
+            margin-bottom: 2rem;
+        }
+
+        .sobre-head h2 {
+            color: var(--forest);
+            margin-bottom: 0;
+            font-size: clamp(1.6rem, 3vw, 2.4rem);
+        }
+
+        .sobre-intro {
+            font-size: .97rem;
+            color: var(--txt2);
+            line-height: 1.85;
+            max-width: 780px;
+            padding-bottom: 2.8rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3.5rem;
+        }
+
+        .sobre-section {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 4rem;
+            padding: 2.8rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sobre-section:last-child {
+            border-bottom: none;
+        }
+
+        .sobre-section-label {
+            position: sticky;
+            top: 11rem;
+        }
+
+        .sobre-section-label h4 {
+            font-family: 'Cormorant Upright', serif;
+            font-size: 1.4rem;
+            color: var(--forest);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .sobre-section-label::before {
+            content: '';
+            display: block;
+            width: 2rem;
+            height: 2px;
+            background: var(--terra);
+            margin-bottom: .9rem;
+        }
+
+        .sobre-section-body p {
+            font-size: .97rem;
+            color: var(--txt2);
+            line-height: 1.85;
+            margin-bottom: 1.1rem;
+        }
+
+        .sobre-section-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .sobre-section {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+
+            .sobre-section-label {
+                position: static;
+            }
+        }
+
+        /* ── ABORDAGEM ── */
+        #abordagem {
+            background: var(--cream2);
+            scroll-margin-top: 7rem;
+            padding-top: 3.5rem;
+        }
+
+        .abord-head {
+            max-width: 820px;
+            margin-bottom: 3.5rem;
+        }
+
+        .abord-head h2 {
+            color: var(--forest);
+            margin-bottom: .9rem;
+            font-size: clamp(1.9rem, 4vw, 3.2rem);
+        }
+
+        .abord-head p {
+            color: var(--txt2);
+            line-height: 1.8;
+            font-size: .95rem;
+        }
+
+        .pillars {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .pillar {
+            padding: 2rem 2.4rem;
+            background: var(--cream);
+            border-left: 3px solid var(--terra);
+        }
+
+        .pillar-n {
+            display: none;
+        }
+
+        .pillar h3 {
+            font-size: 1.25rem;
+            color: var(--forest);
+            margin-bottom: .6rem;
+            font-weight: 400;
+        }
+
+        .pillar p {
+            font-size: .88rem;
+            color: var(--txt2);
+            line-height: 1.75;
+        }
+
+        /* ── ÁREAS DE INTERVENÇÃO ── */
+        #servicos {
+            background: var(--cream);
+            scroll-margin-top: 7rem;
+            padding-top: 3.5rem;
+        }
+
+        .serv-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .serv-head h2 {
+            color: var(--forest);
+            font-size: clamp(1.9rem, 4vw, 3.2rem);
+        }
+
+        .serv-blocks {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .serv-block {
+            border-top: 1px solid var(--border);
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+        }
+
+        .serv-block:last-child {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .serv-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 0;
+            background: var(--terra);
+            transition: height .4s ease;
+        }
+
+        .serv-block.open::before {
+            height: 100%;
+        }
+
+        .serv-block-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.4rem;
+            padding: 1.5rem 0 1.5rem 2rem;
+        }
+
+        .serv-block-header-left {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .serv-block-n {
+            font-family: 'Cormorant Upright', serif;
+            font-size: .85rem;
+            color: var(--terra);
+            letter-spacing: .1em;
+            min-width: 2rem;
+            opacity: .65;
+        }
+
+        .serv-block-tog {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .serv-block-tog::before,
+        .serv-block-tog::after {
+            content: '';
+            position: absolute;
+            background: var(--terra);
+            transition: transform .3s, opacity .3s;
+        }
+
+        .serv-block-tog::before {
+            width: 1px;
+            height: 12px;
+            top: 5px;
+            left: 10px;
+        }
+
+        .serv-block-tog::after {
+            width: 12px;
+            height: 1px;
+            top: 10px;
+            left: 5px;
+        }
+
+        .serv-block.open .serv-block-tog::before {
+            transform: rotate(90deg);
+            opacity: 0;
+        }
+
+        .serv-block h3 {
+            font-family: 'Cormorant Upright', serif;
+            font-size: 1.4rem;
+            color: var(--forest);
+            font-weight: 400;
+            margin-bottom: 0;
+            transition: color .3s;
+        }
+
+        .serv-block:hover h3,
+        .serv-block.open h3 {
+            color: var(--terra);
+        }
+
+        .serv-block-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease, padding .4s;
+            font-size: .92rem;
+            color: var(--txt2);
+            line-height: 1.82;
+            padding-left: 2rem;
+        }
+
+        .serv-block.open .serv-block-body {
+            max-height: 1200px;
+            padding-bottom: 1.6rem;
+        }
+
+        .serv-block-body p {
+            margin-bottom: .9rem;
+        }
+
+        .serv-block-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ── PROCESSO ── */
+        #processo {
+            background: var(--cream2);
+            scroll-margin-top: 7rem;
+        }
+
+        #sobre .s-tag,
+        #abordagem .s-tag,
+        #servicos .s-tag,
+        #processo .s-tag,
+        #contacto .s-tag {
+            font-size: .95rem;
+            letter-spacing: .2em;
+            color: var(--terra) !important;
+        }
+
+        #sobre .s-tag::before,
+        #abordagem .s-tag::before,
+        #servicos .s-tag::before,
+        #processo .s-tag::before,
+        #contacto .s-tag::before {
+            background: var(--terra) !important;
+        }
+
+        .proc-head {
+            margin-bottom: 3.5rem;
+        }
+
+        .proc-head h2 {
+            color: var(--forest);
+            font-size: clamp(1.9rem, 4vw, 3.2rem);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+            background: transparent;
+        }
+
+        .step {
+            padding: 2.4rem;
+            position: relative;
+            background: var(--cream);
+            overflow: hidden;
+            border-top: 3px solid var(--terra);
+        }
+
+        .step:not(:last-child)::after {
+            display: none;
+        }
+
+        .step-n {
+            font-family: 'Cormorant Upright', serif;
+            font-size: 3.8rem;
+            color: var(--cream3);
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: .9rem;
+        }
+
+        .step h3 {
+            font-size: 1.45rem;
+            color: var(--forest);
+            margin-bottom: .7rem;
+        }
+
+        .step p {
+            font-size: .85rem;
+            color: var(--txt2);
+            line-height: 1.7;
+        }
+
+        /* ── TESTEMUNHOS ── */
+        #testemunhos {
+            background: var(--cream2);
+            overflow: hidden;
+        }
+
+        .test-head {
+            margin-bottom: 2.5rem;
+        }
+
+        .test-head h2 {
+            color: var(--forest);
+            font-size: clamp(1.9rem, 4vw, 3.2rem);
+        }
+
+        .test-track {
+            display: flex;
+            gap: 1.4rem;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            padding-bottom: .5rem;
+        }
+
+        .test-track::-webkit-scrollbar {
+            display: none;
+        }
+
+        .testem {
+            min-width: 360px;
+            background: var(--cream);
+            padding: 2.2rem;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .testem::before {
+            content: '\201C';
+            font-family: 'Cormorant Upright', serif;
+            font-size: 5rem;
+            color: var(--terra);
+            position: absolute;
+            top: .8rem;
+            left: 1.4rem;
+            line-height: 1;
+            opacity: .25;
+        }
+
+        .testem-txt {
+            font-size: .95rem;
+            color: var(--txt2);
+            line-height: 1.8;
+            margin-bottom: 1.4rem;
+            font-style: italic;
+            padding-top: 1.5rem;
+        }
+
+        .testem-author {
+            font-size: .75rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--terra);
+        }
+
+        .test-nav {
+            display: flex;
+            gap: .5rem;
+            margin-top: 1.8rem;
+        }
+
+        .scroll-btn {
+            width: 36px;
+            height: 36px;
+            border: 1px solid var(--border);
+            background: transparent;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all .3s;
+        }
+
+        .scroll-btn:hover {
+            background: var(--forest);
+            color: var(--cream);
+            border-color: var(--forest);
+        }
+
+        /* ── FAQ ── */
+        #faq {
+            background: var(--cream);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 6rem;
+            align-items: start;
+        }
+
+        .faq-intro h2 {
+            color: var(--forest);
+            margin-bottom: .9rem;
+            font-size: clamp(1.9rem, 4vw, 3.2rem);
+        }
+
+        .faq-intro p {
+            color: var(--txt2);
+            line-height: 1.8;
+            font-size: .9rem;
+        }
+
+        .faq-intro a {
+            color: var(--terra);
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .faq-item {
+            border-top: 1px solid var(--border);
+        }
+
+        .faq-item:last-child {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-q {
+            padding: 1.4rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            font-family: 'Cormorant Upright', serif;
+            font-size: 1.3rem;
+            color: var(--forest);
+        }
+
+        .faq-tog {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .faq-tog::before,
+        .faq-tog::after {
+            content: '';
+            position: absolute;
+            background: var(--terra);
+            transition: transform .3s, opacity .3s;
+        }
+
+        .faq-tog::before {
+            width: 1px;
+            height: 12px;
+            top: 5px;
+            left: 10px;
+        }
+
+        .faq-tog::after {
+            width: 12px;
+            height: 1px;
+            top: 10px;
+            left: 5px;
+        }
+
+        .faq-item.open .faq-tog::before {
+            transform: rotate(90deg);
+            opacity: 0;
+        }
+
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease, padding .4s;
+            font-size: .9rem;
+            color: var(--txt2);
+            line-height: 1.8;
+        }
+
+        .faq-item.open .faq-a {
+            max-height: 300px;
+            padding-bottom: 1.4rem;
+        }
+
+        /* ── CONTACTO ── */
+        #contacto {
+            background: var(--cream);
+            scroll-margin-top: 7rem;
+        }
+
+        .cont-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 6rem;
+        }
+
+        .cont-info h2 {
+            color: var(--forest);
+            margin-bottom: 1.2rem;
+            font-size: clamp(1.9rem, 4vw, 3.2rem);
+        }
+
+        .cont-info>p {
+            color: var(--txt2);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-size: .95rem;
+        }
+
+        .c-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
+
+        .c-item {
+            display: flex;
+            align-items: flex-start;
+            gap: .9rem;
+        }
+
+        .c-icon {
+            width: 34px;
+            height: 34px;
+            background: var(--forest);
+            color: var(--cream);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .75rem;
+            flex-shrink: 0;
+            font-family: 'Cormorant Upright', serif;
+            font-style: italic;
+        }
+
+        .c-text {
+            font-size: .88rem;
+            color: var(--txt2);
+            line-height: 1.65;
+        }
+
+        .c-text strong {
+            display: block;
+            color: var(--txt);
+            font-weight: 500;
+            font-size: .7rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            margin-bottom: .2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Form */
+        .cont-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.1rem;
+        }
+
+        .fg {
+            display: flex;
+            flex-direction: column;
+            gap: .38rem;
+        }
+
+        .fg label {
+            font-size: .68rem;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--txt3);
+        }
+
+        .fg input,
+        .fg select,
+        .fg textarea {
+            padding: .75rem .9rem;
+            background: var(--cream);
+            border: 1px solid var(--border);
+            color: var(--txt);
+            font-family: 'Montserrat', sans-serif;
+            font-size: .9rem;
+            font-weight: 300;
+            outline: none;
+            transition: border-color .3s;
+            resize: none;
+            appearance: none;
+            -webkit-appearance: none;
+            width: 100%;
+            box-sizing: border-box;
+            height: 2.9rem;
+        }
+
+        .fg textarea {
+            height: 110px;
+        }
+
+        .fg input:focus,
+        .fg select:focus,
+        .fg textarea:focus {
+            border-color: var(--terra);
+        }
+
+        .form-check {
+            display: flex;
+            gap: .75rem;
+            align-items: flex-start;
+        }
+
+        .form-check input {
+            margin-top: .15rem;
+            accent-color: var(--terra);
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .form-check label {
+            font-size: .8rem;
+            color: var(--txt3);
+            line-height: 1.6;
+            cursor: pointer;
+        }
+
+        .form-check label a {
+            color: var(--terra);
+        }
+
+        .btn-send {
+            padding: .9rem 2.2rem;
+            background: var(--forest);
+            color: var(--cream);
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .78rem;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background .3s;
+            align-self: flex-start;
+        }
+
+        .btn-send:hover {
+            background: var(--terra);
+        }
+
+        .form-success {
+            display: none;
+            padding: .9rem 1rem;
+            background: var(--terra2);
+            color: var(--txt);
+            font-size: .85rem;
+        }
+
+        .form-error {
+            display: none;
+            padding: .9rem 1rem;
+            background: var(--txt);
+            color: var(--cream);
+            font-size: .85rem;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--cream2);
+            color: var(--txt2);
+            padding: 2.8rem 5%;
+        }
+
+        .foot-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+        }
+
+        .foot-logo {
+            font-family: 'Cormorant Upright', serif;
+            font-size: 1.15rem;
+            color: var(--txt);
+        }
+
+        .foot-logo span {
+            color: var(--terra2);
+        }
+
+        .foot-links {
+            display: flex;
+            gap: 1.8rem;
+            flex-wrap: wrap;
+        }
+
+        .foot-links a {
+            font-size: .72rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--txt2);
+            text-decoration: none;
+            transition: color .3s;
+        }
+
+        .foot-links a:hover {
+            color: var(--terra2);
+        }
+
+        .foot-bottom {
+            margin: 1.4rem auto 0;
+            padding-top: 1.4rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .foot-seal {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .foot-seal a {
+            display: flex;
+            align-items: center;
+            line-height: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .foot-seal img {
+            height: 140px;
+            width: auto;
+            display: block;
+            vertical-align: middle;
+        }
+
+        .foot-seal>img {
+            height: 160px;
+        }
+
+        .foot-legal {
+            font-size: .72rem;
+            text-align: center;
+            color: var(--txt2);
+        }
+
+        .cont-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.4rem;
+        }
+
+        .cont-social a {
+            color: var(--forest);
+            transition: color .3s;
+            line-height: 0;
+        }
+
+        .cont-social a:hover {
+            color: var(--terra2);
+        }
+
+        .foot-icon {
+            color: var(--txt2);
+            line-height: 0;
+            transition: color .3s;
+        }
+
+        .foot-icon:hover {
+            color: var(--terra);
+        }
+
+        /* ── COOKIE BANNER ── */
+        #cookieBanner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 500;
+            background: var(--cream);
+            border-top: 1px solid var(--border);
+            padding: 1.2rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        #cookieBanner p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: .85rem;
+            color: var(--txt2);
+            line-height: 1.6;
+            margin: 0;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .cookie-btns {
+            display: flex;
+            gap: .8rem;
+            flex-shrink: 0;
+        }
+
+        #cookieAccept {
+            padding: .6rem 1.4rem;
+            background: var(--forest);
+            color: var(--cream);
+            font-family: 'Montserrat', sans-serif;
+            font-size: .78rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            border: 1px solid var(--forest);
+            cursor: pointer;
+            transition: background .3s;
+        }
+
+        #cookieAccept:hover {
+            background: var(--terra);
+            border-color: var(--terra);
+        }
+
+        #cookieReject {
+            padding: .6rem 1.4rem;
+            background: transparent;
+            color: var(--forest);
+            font-family: 'Montserrat', sans-serif;
+            font-size: .78rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            border: 1px solid var(--forest);
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        #cookieReject:hover {
+            background: var(--forest);
+            color: var(--cream);
+        }
+
+        @media (max-width: 768px) {
+            #cookieBanner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+
+        /* ── DESTAQUES ── */
+        [style*="color:var(--terra)"] {
+            font-weight: 500;
+        }
+
+        /* ── SCROLL REVEAL ── */
+        .rv {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        .rv.vis {
+            opacity: 1;
+            transform: none;
+        }
+
+        .rv.d1 {
+            transition-delay: .1s;
+        }
+
+        .rv.d2 {
+            transition-delay: .2s;
+        }
+
+        .rv.d3 {
+            transition-delay: .3s;
+        }
+
+        .rv.d4 {
+            transition-delay: .4s;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+            .pillars {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .step:not(:last-child)::after {
+                display: none;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .nav-logo img {
+                height: 100px;
+            }
+
+            #inicio {
+                padding-top: 11rem;
+            }
+        }
+
+        @media (max-width: 1150px) {
+            #inicio {
+                grid-template-columns: 1.1fr 0.9fr;
+                align-items: stretch;
+            }
+
+            .hero-visual {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                translate: none;
+                width: 100%;
+                height: 100%;
+                max-height: 620px;
+                pointer-events: auto;
+                align-self: stretch;
+            }
+
+            .hero-img-wrap {
+                width: 100%;
+                height: 100%;
+                min-height: 500px;
+                max-height: 620px;
+            }
+
+            .hero-img-frame {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: unset;
+                border-radius: 0;
+            }
+        }
+
+        .desktop-only {
+            display: inline;
+        }
+
+        .mobile-only {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-only {
+                display: none;
+            }
+
+            .mobile-only {
+                display: inline-block;
+            }
+
+            nav {
+                padding: 1.1rem 5%;
+            }
+
+            .nav-logo img {
+                height: 100px;
+            }
+
+            .hero-title {
+                font-size: clamp(2.4rem, 9vw, 2.8rem);
+                overflow-wrap: break-word;
+                word-break: break-word;
+            }
+
+            .hero-title span {
+                white-space: normal;
+            }
+
+            .quote-banner {
+                padding: 2rem 8%;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+                max-width: 220px;
+            }
+
+            .btn-p,
+            .btn-o {
+                text-align: center;
+            }
+
+            .nav-links,
+            .nav-cta {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            #inicio {
+                grid-template-columns: 1fr;
+                padding: 10rem 5% 3rem;
+            }
+
+            .hero-visual {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                translate: none;
+                width: 100%;
+                height: 480px;
+                pointer-events: auto;
+                margin: 2rem 0 0;
+            }
+
+            .hero-img-wrap,
+            .hero-img-frame {
+                width: 100%;
+                height: 480px;
+                border-radius: 0;
+            }
+
+            .sobre-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .sobre-img {
+                order: -1;
+            }
+
+            .sobre-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sobre-photo {
+                position: static;
+                aspect-ratio: 2/3;
+            }
+
+            #processo {
+                padding-top: 3rem !important;
+            }
+
+            #contacto {
+                padding-top: 3rem !important;
+            }
+
+
+            .serv-blocks {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .cont-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .foot-bottom {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .foot-seal {
+                justify-content: center;
+                align-items: center;
+                transform: translateX(-1rem);
+            }
+
+            .foot-seal>img,
+            .foot-seal>a {
+                height: 90px;
+                align-self: center;
+            }
+
+            .foot-seal img {
+                height: 90px;
+            }
+
+            .foot-seal>img {
+                height: 108px;
+                transform: translateX(1.5rem);
+            }
+
+            .foot-seal>a {
+                transform: translateX(-1.5rem);
+            }
+
+            .foot-legal {
+                text-align: center;
+            }
+
+            .foot-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .foot-social-icons {
+                margin: 0 !important;
+            }
+
+            .foot-links {
+                display: flex;
+                flex-direction: column;
+                gap: .6rem;
+                margin-top: .4rem;
+            }
+        }
+    </style>
+
+    <!-- Dados Estruturados (Schema.org) — substituir o domínio pelo URL real -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://raizesdoeu.pt/#business",
+          "name": "Raízes do Eu",
+          "alternateName": "Raízes do Eu — Psicóloga Filipa Vilhena Martins",
+          "description": "Consultas de psicologia online e presenciais em Guimarães. Especialização em Terapia Cognitivo-Comportamental para Ansiedade, Depressão, Trauma, Adições, Terapia de Casal e Familiar.",
+          "url": "https://raizesdoeu.pt/",
+          "logo": "https://raizesdoeu.pt/logo.png",
+          "image": "https://raizesdoeu.pt/fotografia_filipa.jpeg",
+          "telephone": "+351926548572",
+          "email": "psicologia@raizesdoeu.pt",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Avenida D. João IV, Centro Comercial Villa Loja nº 58",
+            "addressLocality": "Guimarães",
+            "postalCode": "4810-534",
+            "addressCountry": "PT"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "description": "Atendimento por marcação"
+          },
+          "priceRange": "€€",
+          "employee": { "@id": "https://raizesdoeu.pt/#filipa" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://raizesdoeu.pt/#filipa",
+          "name": "Filipa Vilhena Martins",
+          "jobTitle": "Psicóloga",
+          "description": "Psicóloga com mais de 10 anos de experiência. Especialização Avançada em Terapias Cognitivo-Comportamentais (Instituto CRIAP, 2023). Cédula Profissional OPP n.º C.P. 23722.",
+          "worksFor": { "@id": "https://raizesdoeu.pt/#business" },
+          "telephone": "+351926548572",
+          "email": "psicologia@raizesdoeu.pt",
+          "url": "https://raizesdoeu.pt/",
+          "image": "https://raizesdoeu.pt/fotografia_filipa.jpeg",
+          "knowsAbout": [
+            "Terapia Cognitivo-Comportamental",
+            "Adições e Comportamentos Dependentes",
+            "Ansiedade",
+            "Depressão",
+            "Trauma",
+            "Terapia de Casal",
+            "Terapia Familiar",
+            "Desenvolvimento Pessoal",
+            "Autoestima e Autoconfiança",
+            "Regulação Emocional",
+            "Intervenção em Crise",
+            "Autoconhecimento"
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <div class="cursor-dot" id="cDot"></div>
+    <div class="cursor-ring" id="cRing"></div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#sobre" onclick="closeMobile()">Sobre Mim</a>
+        <a href="#servicos" onclick="closeMobile()">Áreas de Intervenção</a>
+        <a href="#abordagem" onclick="closeMobile()">Abordagem Terapêutica</a>
+        <a href="#contacto" onclick="closeMobile()">Marcar Consulta</a>
+    </div>
+
+    <!-- NAV -->
+    <nav id="mainNav">
+        <a href="#inicio" class="nav-logo"><img src="logo.png" alt="Raízes do Eu"></a>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#servicos">Áreas de Intervenção</a></li>
+            <li><a href="#processo">Abordagem Terapêutica</a></li>
+        </ul>
+        <a href="#contacto" class="nav-cta">Marcar Consulta</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio">
+        <div class="hero-text">
+            <div class="ha ha1" style="margin-bottom:1.4rem; display:flex; flex-direction:column; gap:0.5rem;">
+                <span
+                    style="color:var(--terra); font-family:'Cormorant Upright',serif; font-size:1.6rem; font-weight:500; line-height:1.2;">Psicóloga
+                    Cátia Raposo</span>
+                <span class="hero-badge">C.P. 26955</span>
+            </div>
+            <h1 class="hero-title ha ha2">Um espaço para <em>encontrar</em> o seu caminho.</h1>
+            <p class="hero-sub ha ha3">Espaço terapêutico que integra psicologia, movimento e
+                arte.<br><br>Acompanhamento psicológico online e presencial nas Caldas da Rainha à luz do EMDR e da
+                hipnose clínica. Complementado por aulas regulares de dança expressiva e movimento consciente, criando
+                um espaço que vai além da psicologia tradicional e integra corpo, emoção e expressão.<br><br>A arte
+                surge como expansão: uma forma de presença, criação e transformação interna. Tal como o movimento,
+                permite dar forma ao que muitas vezes permanece sem palavras, abrindo caminhos para compreender,
+                integrar e transformar experiências difíceis. Num trabalho sensível com o trauma, o corpo, a emoção e a
+                expressão criativa tornam-se recursos essenciais para restaurar a segurança, fortalecer a ligação
+                consigo próprio e voltar a sentir a vida com maior autenticidade.</p>
+            <a href="#contacto" class="btn-p ha ha4 mobile-only" style="margin-top:1.2rem;">Marcar Consulta</a>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-img-wrap">
+                <div class="hero-img-frame">
+                    <img src="fotografia_catia.jpg" alt="Cátia Raposo — Psicóloga">
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-glyph" aria-hidden="true">ψ</div>
+    </section>
+
+    <!-- QUOTE -->
+    <div class="quote-banner">
+        <p class="quote-txt rv">"A arte é a expressão da mente em paz."</p>
+        <p class="quote-attr rv d1">Agnes Martin</p>
+    </div>
+
+    <template>
+        <!-- SOBRE MIM -->
+        <section id="sobre">
+            <div class="section-inner">
+                <div class="sobre-layout">
+                    <div class="sobre-content">
+                        <div class="sobre-head">
+                            <p class="s-tag rv">Sobre Mim</p>
+                            <h2 class="rv d1">Uma psicóloga que o/a acompanha com<br class="desktop-only">
+                                profissionalismo,
+                                empatia e respeito.</h2>
+                        </div>
+                        <p class="sobre-intro rv d2">Chamo-me <span style="color:var(--terra)">Filipa Vilhena
+                                Martins</span>, nasci em Guimarães. Sou filha, neta, irmã mais nova, tia e mais
+                            recentemente
+                            Mãe de uma menina e de um menino. Cresci rodeada por uma família numerosa e por amigos/as.
+                            Todos/as
+                            desempenharam um papel fundamental na construção das minhas raízes e da pessoa que sou hoje.
+                        </p>
+                        <div class="sobre-section rv">
+                            <div class="sobre-section-label">
+                                <h4>Percurso<br>Académico</h4>
+                            </div>
+                            <div class="sobre-section-body">
+                                <p>Iniciei a licenciatura de Psicologia em 2007, fiz Erasmus em Barcelona durante a
+                                    mesma.
+                                    Posteriormente, concluí o Mestrado em Psicologia da Justiça, tendo realizado o
+                                    estágio
+                                    curricular numa Comunidade Terapêutica (CT). Concluí o mestrado com a elaboração de
+                                    Relatório de Estágio e Dissertação.</p>
+                                <p>Em 2023, terminei a <span style="color:var(--terra)">Especialização Avançada em
+                                        Terapias
+                                        Cognitivo-Comportamentais</span>, no instituto CRIAP.</p>
+                            </div>
+                        </div>
+                        <div class="sobre-section rv">
+                            <div class="sobre-section-label">
+                                <h4>Experiência<br>Profissional</h4>
+                            </div>
+                            <div class="sobre-section-body">
+                                <p>Em 2014, realizei o meu estágio profissional numa CT, na cidade de Chaves.
+                                    Posteriormente, mudei-me para Setúbal, onde integrei outra CT. Concluí o meu <span
+                                        style="color:var(--terra)">Estágio da OPP</span> em 2019, tendo continuado a
+                                    exercer
+                                    funções na mesma clínica.</p>
+                                <p>Em 2020, tomei a decisão mais transformadora e desafiante da minha vida: ser mãe e
+                                    regressar à cidade onde nasci. Esta mudança levou-me a sair da minha zona de
+                                    conforto e
+                                    abraçar novos desafios profissionais. Trabalhei na linha SNS de apoio à COVID-19,
+                                    realizei consultas de psicologia exclusivamente online, colaborei numa clínica em
+                                    <span style="color:var(--terra)">regime online e presencial</span> e desempenhei
+                                    funções
+                                    como dinamizadora comunitária.</p>
+                                <p>Em fevereiro de 2023 regressei ao contexto de Comunidade Terapêutica, onde permaneci
+                                    até
+                                    julho de 2026.</p>
+                                <p>Atualmente, conto com <span style="color:var(--terra)">mais de 10 anos de experiência
+                                        prática na área da Psicologia</span>. Grande parte deste percurso foi
+                                    desenvolvido
+                                    em Comunidades Terapêuticas. Acompanhei, maioritariamente pessoas com diagnóstico de
+                                    <span style="color:var(--terra)">Adições e Comportamentos Dependentes</span>, mas
+                                    quase
+                                    sempre com comorbilidade associada a outras perturbações e/ou sintomatologia
+                                    psicológica, nomeadamente <span style="color:var(--terra)">Depressão, Ansiedade e
+                                        Trauma</span>.
+                                </p>
+                                <p>Acredito numa abordagem terapêutica centrada na pessoa, respeitando a sua
+                                    individualidade
+                                    e promovendo uma compreensão integrada nas suas necessidades. Tendo como objetivo o
+                                    <span style="color:var(--terra)">Empoderamento</span> de cada um/a, através do <span
+                                        style="color:var(--terra)">autoconhecimento</span>, e <span
+                                        style="color:var(--terra)">fortalecimento da autoestima</span> com valorização
+                                    dos
+                                    recursos pessoais, procurando apoiar cada pessoa na construção de um caminho de
+                                    mudança,
+                                    crescimento e recuperação consolidada.
+                                </p>
+                                <p>Esta experiência, permitiu-me desenvolver uma <span
+                                        style="color:var(--terra)">prática
+                                        clínica sólida e diversificada, assente na escuta ativa, com empatia, respeito e
+                                        rigor científico</span>. Atualmente, realizo acompanhamento psicológico através
+                                    de
+                                    consultas presenciais em Guimarães e consultas online.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABORDAGEM -->
+        <section id="abordagem">
+            <div class="section-inner">
+                <div class="abord-head">
+                    <h2 class="rv d1">Como se trabalha na <span style="color:var(--terra)">Raízes do Eu</span>?</h2>
+                </div>
+                <div class="pillars">
+                    <div class="pillar rv">
+                        <h3>Plano Terapêutico Individualizado</h3>
+                        <p>Após a avaliação clínica, são definidos objetivos terapêuticos ajustados às necessidades de
+                            cada
+                            pessoa. O/a próprio/a terá sempre uma participação ativa no processo terapêutico, promovendo
+                            uma
+                            maior compreensão das suas emoções, pensamentos e comportamentos. O objetivo final passa por
+                            aumentar a funcionalidade da pessoa, promover o bem-estar emocional e melhorar a sua
+                            qualidade
+                            de vida.</p>
+                    </div>
+                    <div class="pillar rv d1">
+                        <h3>Consistência Científica</h3>
+                        <p>Toda a intervenção psicológica é sustentada por mais de uma década de experiência prática e
+                            fundamentada em evidência científica atualizada, rigorosa e alinhada com as melhores
+                            práticas da
+                            Psicologia e da Terapia Cognitivo-Comportamental.</p>
+                    </div>
+                    <div class="pillar rv d2">
+                        <h3>Confidencialidade e Ética</h3>
+                        <p>Compromisso com o rigor ético, sigilo profissional e proteção dos seus dados pessoais. A
+                            relação
+                            terapêutica é construída com base na confiança, empatia e respeito, proporcionando um espaço
+                            seguro, acolhedor e livre de julgamentos, onde se possa sentir ouvido/a e compreendido/a.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ÁREAS DE INTERVENÇÃO -->
+        <section id="servicos">
+            <div class="section-inner">
+                <div class="serv-head">
+                    <div>
+                        <h2 class="rv d1">Áreas de Intervenção</h2>
+                    </div>
+                </div>
+                <div class="serv-blocks rv">
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Adição e Comportamentos Dependentes</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>A <span style="color:var(--terra);font-weight:500">adição</span> pode assumir diferentes
+                                formas e <span style="color:var(--terra);font-weight:500">comportamentos
+                                    dependentes</span>.
+                                Pode ser física,
+                                envolvendo o consumo de substâncias que alteram o sistema nervoso e o humor, como o
+                                álcool e
+                                as drogas psicotrópicas, ou comportamental, relacionada com o jogo, o trabalho, a
+                                alimentação, entre outros.</p>
+                            <p>Em ambos os casos, existe uma necessidade crescente de aumentar a frequência ou
+                                intensidade
+                                do consumo ou comportamento para alcançar o mesmo efeito inicial. Com o tempo, surge
+                                perda
+                                de controlo e, mesmo perante consequências negativas na vida pessoal, profissional ou
+                                relacional, torna-se difícil interromper esse padrão.</p>
+                            <p>A adição é uma doença crónica, progressiva e pode ser fatal. No entanto, com
+                                acompanhamento
+                                adequado, é possível controlá-la, podendo recuperar a sua qualidade de vida.</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Ansiedade</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>A <span style="color:var(--terra);font-weight:500">ansiedade</span> caracteriza-se por
+                                uma
+                                preocupação excessiva, persistente e difícil de controlar.
+                                Pode manifestar-se através de sintomas físicos (e.g., dores de cabeça, cansaço e
+                                alterações
+                                do sono), sociais (e.g., evitar encontros ou situações sociais), ocupacionais (e.g.,
+                                desinteresse pelos hobbies ou pelas atividades habituais) e, naturalmente, emocionais
+                                (e.g.,
+                                tristeza, medo e irritabilidade).</p>
+                            <p>A ansiedade está orientada para o futuro, envolvendo a antecipação e a projeção de
+                                acontecimentos negativos e/ou percecionados como ameaçadores.</p>
+                            <p>O acompanhamento psicológico ajuda a compreender a origem desta preocupação e a
+                                desenvolver
+                                formas mais eficazes de lidar com ela, devolvendo maior sensação de controlo e
+                                tranquilidade.</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Autoconhecimento</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>O <span style="color:var(--terra);font-weight:500">autoconhecimento</span> permite
+                                compreender melhor quem somos, o que valorizamos e a forma como
+                                pensamos, sentimos e agimos. Este processo envolve explorar emoções, valores,
+                                necessidades,
+                                motivações, características pessoais, pontos fortes, limitações e padrões de
+                                comportamento.
+                            </p>
+                            <p>Ao desenvolver maior consciência sobre si próprio/a, torna-se possível construir uma vida
+                                com
+                                maior coerência e liberdade, fazendo escolhas mais alinhadas com as suas necessidades,
+                                em
+                                vez de reagir apenas ao contexto ou às expectativas dos outros.</p>
+                            <p>O autoconhecimento é basilar para a construção da <span
+                                    style="color:var(--terra);font-weight:500">inteligência emocional</span>,
+                                constituindo
+                                um
+                                processo contínuo e transformador, essencial para viver em harmonia consigo próprio/a,
+                                com
+                                os outros e com o meio que o rodeia</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Desenvolvimento Pessoal</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>O <span style="color:var(--terra);font-weight:500">desenvolvimento pessoal</span> não
+                                consiste em procurar a perfeição, mas sim em trabalhar, ao
+                                ritmo de cada pessoa, na construção de uma versão mais consciente, equilibrada e
+                                funcional
+                                de si próprio/a.</p>
+                            <p>Este processo não se destina apenas a quem enfrenta dificuldades, mas a qualquer pessoa
+                                que
+                                sinta vontade de evoluir, definir prioridades e objetivos de vida.</p>
+                            <p>Cada pessoa é única e possui um valor próprio. Neste percurso, é possível descobrir-se
+                                com
+                                maior profundidade e promover transformações que aproximem a sua vida daquilo que
+                                realmente
+                                deseja para si.</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Autoestima e/ou Autoconfiança</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>A <span style="color:var(--terra);font-weight:500">autoestima</span> consiste em
+                                reconhecer
+                                as próprias qualidades e limitações, aceitando-as com
+                                compaixão e respeito por si próprio/a. Neste processo, construiremos uma relação mais
+                                saudável consigo próprio/a, baseada no respeito, aceitação e compaixão.</p>
+                            <p>A <span style="color:var(--terra);font-weight:500">autoconfiança</span> constrói-se
+                                através
+                                da capacidade de reconhecer que os erros e dificuldades
+                                fazem parte do percurso de vida, sem comprometer o nosso valor pessoal.</p>
+                            <p>Promover a autoestima e a autoconfiança permite enfrentar desafios com maior segurança e
+                                estabelecer uma relação mais positiva consigo próprio/a.</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Depressão</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>A <span style="color:var(--terra);font-weight:500">depressão</span> está frequentemente
+                                associada a um acontecimento precipitante, habitualmente
+                                relacionado com perda. Os sintomas mais predominantes são o humor deprimido ou irritável
+                                e a
+                                diminuição ou ausência de afeto positivo.</p>
+                            <p>Os sintomas emocionais podem incluir sentimentos de culpa, desvalorização, desamparo e
+                                falta
+                                de confiança. Os sintomas comportamentais e físicos podem manifestar-se através de choro
+                                fácil, isolamento social, diminuição da libido e fadiga, podendo, em alguns casos,
+                                evoluir
+                                para comportamentos de automutilação e/ou ideação suicida.</p>
+                            <p>Os sintomas cognitivos podem incluir dificuldades de concentração e atenção, pensamentos
+                                negativos persistentes e ruminação. De forma geral, a pessoa tende a ver-se de forma
+                                negativa, sentindo-se inadequada, sem valor ou incompetente. O mundo é percecionado como
+                                um
+                                lugar cheio de obstáculos e o futuro é frequentemente encarado com falta de esperança.
+                            </p>
+                            <p>O acompanhamento psicológico permite compreender a experiência da pessoa, trabalhar os
+                                fatores envolvidos e desenvolver estratégias que, promovam maior equilíbrio emocional e
+                                qualidade de vida.</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Regulação/Gestão Emocional</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>As emoções fazem parte da experiência humana e não existem emoções "boas" ou "más";
+                                existem
+                                formas mais ou menos ajustadas de lidar com aquilo que sentimos.<br>A <span
+                                    style="color:var(--terra);font-weight:500">gestão emocional</span>
+                                envolve aprender a reconhecer, compreender e aceitar as próprias emoções, desenvolvendo
+                                formas mais equilibradas de as gerir e expressar.</p>
+                            <p>Desta forma, será possível responder com maior consciência, equilíbrio e capacidade de
+                                adaptação às diferentes necessidades e situações da vida.</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Terapia Familiar</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>A <span style="color:var(--terra);font-weight:500">terapia familiar</span> é uma forma de
+                                psicoterapia que envolve, em simultâneo, vários elementos
+                                da família, com o objetivo de melhorar a comunicação, resolver conflitos ou situações de
+                                crise e fortalecer as relações familiares.</p>
+                            <p>O objetivo não é encontrar culpados, mas compreender os padrões de funcionamento da
+                                família e
+                                de relacionamento que podem ser melhorados.</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Terapia de Casal</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>A <span style="color:var(--terra);font-weight:500">terapia de casal</span> é uma forma de
+                                psicoterapia realizada com duas pessoas que, mantêm uma
+                                relação amorosa, com o objetivo de melhorar a relação, resolver conflitos e fortalecer a
+                                ligação emocional.</p>
+                            <p>Não se destina apenas a "casais em crise", podendo também ter um carácter preventivo,
+                                ajudando a melhorar a comunicação, fortalecer a relação e promover um maior entendimento
+                                mútuo.</p>
+                            <p>Na terapia de casal não se procura determinar quem está certo ou errado, mas compreender
+                                de
+                                que forma a relação pode funcionar com maior harmonia, respeito e equilíbrio.</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Trauma</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>O <span style="color:var(--terra);font-weight:500">trauma</span> pode resultar de
+                                diversos
+                                acontecimentos que, ameaçam a vida ou a segurança da
+                                pessoa, de forma direta ou indireta, como agressões, guerra, violação, acidentes graves,
+                                morte ou abuso. Geralmente, trata-se de uma experiência repentina e inesperada, que
+                                provoca
+                                um forte impacto emocional, podendo ter uma duração curta ou prolongada.</p>
+                            <p>O trauma pode levar a pessoa a sentir-se mais vulnerável, insegura e com uma diminuição
+                                da
+                                autoestima. O acompanhamento psicológico ajuda na integração da experiência traumática e
+                                na
+                                recuperação do equilíbrio emocional.</p>
+                        </div>
+                    </div>
+                    <div class="serv-block">
+                        <div class="serv-block-header">
+                            <div class="serv-block-header-left">
+                                <h3>Intervenção em Crise</h3>
+                            </div>
+                            <div class="serv-block-tog"></div>
+                        </div>
+                        <div class="serv-block-body">
+                            <p>A <span style="color:var(--terra);font-weight:500">intervenção em crise</span> consiste
+                                numa
+                                resposta rápida e de curta duração, destinada a ajudar a
+                                pessoa a lidar com uma situação emocionalmente intensa, na qual o equilíbrio psicológico
+                                e
+                                emocional se encontra temporariamente comprometido após um acontecimento marcante (e.g.,
+                                uma
+                                situação de abuso ou um ataque de ansiedade).</p>
+                            <p>O objetivo é reduzir o sofrimento imediato, promover estabilidade emocional e ajudar a
+                                pessoa
+                                a recuperar um maior sentido de segurança, controlo e equilíbrio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESSO -->
+        <section id="processo">
+            <div class="section-inner">
+                <div class="proc-head">
+                    <h2 class="rv" style="color:var(--forest);font-size:clamp(1.9rem,4vw,3.2rem);margin-bottom:0;">
+                        Abordagem
+                        Terapêutica | Cognitivo-Comportamental</h2>
+                </div>
+                <div class="steps">
+                    <div class="step rv">
+                        <div class="step-n">01</div>
+                        <h3>Avaliação</h3>
+                        <p>A avaliação psicológica é o ponto de partida para a construção de um plano de intervenção
+                            personalizado. Sendo um processo contínuo e dinâmico, permite ajustar estratégias ao longo
+                            do
+                            acompanhamento, em constante articulação e reflexão com o/a paciente.</p>
+                    </div>
+                    <div class="step rv d1">
+                        <div class="step-n">02</div>
+                        <h3>Definição de Metas</h3>
+                        <p>O/A paciente identifica as dificuldades que deseja trabalhar e os objetivos que pretende
+                            atingir,
+                            enquanto o terapeuta o/a auxilia na identificação de obstáculos e na construção de recursos
+                            e
+                            estratégias que facilitem a concretização dessas metas.</p>
+                    </div>
+                    <div class="step rv d2">
+                        <div class="step-n">03</div>
+                        <h3>Implementação da Intervenção</h3>
+                        <p>Cada sessão é orientada por objetivos específicos, promovendo o autoconhecimento e a
+                            compreensão
+                            do próprio funcionamento. A intervenção é sustentada pelos princípios da Terapia
+                            Cognitivo-Comportamental, uma das abordagens mais estudadas e eficazes na intervenção
+                            psicológica.</p>
+                    </div>
+                    <div class="step rv d3">
+                        <div class="step-n">04</div>
+                        <h3>Avaliação e Finalização</h3>
+                        <p>Paciente e terapeuta avaliam os resultados obtidos e o alcance das metas definidas. O/A
+                            paciente
+                            ficará dotado/a de competências e estratégias que promovam a sua autonomia, incluindo
+                            ferramentas de prevenção da recaída e manutenção do bem-estar psicológico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <div class="section-inner cont-grid">
+                <div class="cont-info">
+                    <h2 class="rv d1">Vamos conversar?</h2>
+                    <p class="rv d2">Já teve a coragem de chegar até aqui. Este pode ser o momento certo para dar o
+                        próximo
+                        passo no cuidado da sua saúde mental e bem-estar emocional. Entre em contacto, estou aqui para
+                        o/a
+                        ajudar.</p>
+                    <div class="c-details rv d3">
+                        <div class="c-item">
+                            <div class="c-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="c-text"><strong>Localização</strong>Avenida D. João IV, Centro Comercial Villa
+                                Loja
+                                nº 58<br>4810-534 Guimarães</div>
+                        </div>
+                        <div class="c-item">
+                            <div class="c-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div class="c-text"><strong>Telefone</strong>+351 926 548 572</div>
+                        </div>
+                        <div class="c-item">
+                            <div class="c-icon" style="font-size:1.4rem">@</div>
+                            <div class="c-text"><strong>E-mail</strong>psicologia@raizesdoeu.pt</div>
+                        </div>
+                        <div class="c-item">
+                            <div class="c-icon" style="font-size:1.4rem">◷</div>
+                            <div class="c-text"><strong>Horários</strong>Atendimento por marcação</div>
+                        </div>
+                    </div>
+                </div>
+                <form class="cont-form rv" id="contForm" novalidate>
+                    <input type="hidden" name="access_key" value="b27ca15e-e2ae-48dd-a04c-dca0656c8d0a">
+                    <input type="hidden" name="subject" value="Nova mensagem — Raízes do Eu">
+                    <input type="hidden" name="from_name" value="Raízes do Eu — Website">
+                    <div class="form-row">
+                        <div class="fg"><label for="nome">Nome</label><input type="text" id="nome" name="nome"
+                                placeholder="O seu nome" required></div>
+                        <div class="fg"><label for="email">E-mail</label><input type="email" id="email" name="email"
+                                placeholder="email@exemplo.com" required></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="fg"><label for="tel">Telefone (opcional)</label><input type="tel" id="tel"
+                                name="tel" placeholder="+351 9XX XXX XXX"></div>
+                        <div class="fg">
+                            <label for="servico">Motivo do Contacto</label>
+                            <select id="servico" name="servico">
+                                <option value="">Selecione...</option>
+                                <option>Marcação de consulta presencial</option>
+                                <option>Marcação de consulta online</option>
+                                <option>Pedido de informações</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="rgpd" name="rgpd" required>
+                        <label for="rgpd">Li e aceito a <a href="#" id="privacyLinkForm">Política de Privacidade</a> e
+                            consinto o tratamento dos
+                            meus dados pessoais para efeitos de resposta ao presente contacto, nos termos do
+                            RGPD.</label>
+                    </div>
+                    <button type="submit" class="btn-send">Vamos conversar</button>
+                    <div class="form-success" id="fSuccess">✓ Pedido enviado com sucesso. Responderei em breve!</div>
+                    <div class="form-error" id="fError">✕ Por favor aceite a Política de Privacidade antes de enviar.
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="foot-inner">
+                <div class="foot-logo">Filipa Vilhena <span>Martins</span></div>
+                <div class="foot-social-icons" style="display:flex;gap:.9rem;align-items:center;margin:0 auto 0 11rem;">
+                    <a href="https://www.instagram.com/raizesdoeu.psicologia" target="_blank" rel="noopener"
+                        aria-label="Instagram" class="foot-icon">
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <circle cx="12" cy="12" r="4.5" />
+                            <circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none" />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/351926548572" target="_blank" rel="noopener" aria-label="WhatsApp"
+                        class="foot-icon">
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.114 1.522 5.843L.036 23.55a.5.5 0 0 0 .608.625l5.92-1.516A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.032-1.373l-.36-.214-3.733.956.991-3.624-.235-.373A9.862 9.862 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="foot-links">
+                    <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener">Livro de Reclamações</a>
+                    <a href="#" id="privacyLink">Política de Privacidade</a>
+                </div>
+            </div>
+            <div class="foot-bottom">
+                <div class="foot-seal">
+                    <img src="pngs/Identificador_psicologa.png" alt="Ordem dos Psicólogos Portugueses">
+                    <a href="Documentos/CertidaoRegisto.pdf" target="_blank" rel="noopener"
+                        aria-label="Ver certidão de registo ERS"><img src="pngs/ERS.png" alt="ERS"></a>
+                </div>
+                <p class="foot-legal">© 2026 Filipa Vilhena Martins — Psicóloga | Raízes do Eu. C.P. 23722 OPP. Todos os
+                    direitos reservados.</p>
+            </div>
+        </footer>
+
+        <!-- MODAL POLÍTICA DE PRIVACIDADE -->
+        <div id="privacyModal"
+            style="display:none;position:fixed;inset:0;z-index:800;background:rgba(28,23,18,.6);backdrop-filter:blur(4px);overflow-y:auto;">
+            <div
+                style="max-width:760px;margin:4rem auto;background:var(--cream);padding:3rem 3.2rem;position:relative;">
+                <button id="privacyClose"
+                    style="position:absolute;top:1.2rem;right:1.4rem;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--txt3);line-height:1;"
+                    aria-label="Fechar">✕</button>
+                <p
+                    style="font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin-bottom:.8rem;">
+                    Raízes do Eu</p>
+                <h2
+                    style="font-family:'Cormorant Upright',serif;font-size:2rem;color:var(--forest);font-weight:400;margin-bottom:2rem;">
+                    Política de Privacidade</h2>
+
+                <div
+                    style="font-size:.9rem;color:var(--txt2);line-height:1.85;display:flex;flex-direction:column;gap:1.6rem;">
+                    <div>
+                        <h3
+                            style="font-family:'Cormorant Upright',serif;font-size:1.2rem;color:var(--forest);font-weight:400;margin-bottom:.5rem;">
+                            1. Responsável pelo tratamento</h3>
+                        <p><strong>Nome Profissional:</strong> Filipa Vilhena Martins</p>
+                        <p><strong>Morada (Sede/Contacto):</strong> Avenida D. João IV, Centro Comercial Villa Loja
+                            nº58,
+                            4810-534 Guimarães</p>
+                        <p><strong>Email:</strong> <a href="mailto:psicologia@raizesdoeu.pt"
+                                style="color:var(--terra)">psicologia@raizesdoeu.pt</a></p>
+                        <p><strong>Cédula Profissional (OPP):</strong> 23722</p>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-family:'Cormorant Upright',serif;font-size:1.2rem;color:var(--forest);font-weight:400;margin-bottom:.5rem;">
+                            2. Dados Pessoais</h3>
+                        <p>Os dados pessoais recolhidos e tratados dependem da relação estabelecida com o titular dos
+                            dados
+                            e da finalidade específica do tratamento.</p>
+                        <p style="margin-top:.8rem;"><strong>2.1 Dados recolhidos no âmbito da prestação de serviços de
+                                psicologia</strong></p>
+                        <p>No contexto da prestação de cuidados de saúde mental poderão ser recolhidos e tratados dados
+                            pessoais como:</p>
+                        <p>— Dados de identificação e contacto: nome, data de nascimento, número de identificação fiscal
+                            (NIF), morada de faturação, endereço de email, contacto telefónico e contacto telefónico de
+                            emergência;</p>
+                        <p>— Dados relativos à saúde (categoria especial de dados pessoais nos termos do artigo 9.º do
+                            RGPD), incluindo, quando necessário para prestação de serviços: motivo da consulta;
+                            historial
+                            clínico; informação recolhida durante as sessões; avaliação psicológica; planos de
+                            intervenção e
+                            acompanhamento.</p>
+                        <p>Os dados relativos à saúde são tratados exclusivamente para efeitos da prestação de cuidados
+                            psicológicos, estando sujeitos ao dever do sigilo profissional e a medidas técnicas
+                            adequadas
+                            para garantir a sua confidencialidade e segurança.</p>
+                        <p style="margin-top:.8rem;"><strong>2.2 Dados recolhidos através do website</strong></p>
+                        <p>O formulário de contacto do website recolhe apenas os dados estritamente necessários para
+                            permitir um primeiro contacto, nomeadamente: nome; endereço de email; contacto telefónico
+                            (opcional); motivo do contacto (Pedido de Informações, Consulta Presencial ou Consulta
+                            Online).
+                        </p>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-family:'Cormorant Upright',serif;font-size:1.2rem;color:var(--forest);font-weight:400;margin-bottom:.5rem;">
+                            3. Conservação dos Dados</h3>
+                        <p>Os dados pessoais são conservados apenas durante o período necessário para cumprir as
+                            finalidades
+                            que justificaram a sua recolha e para dar cumprimento às obrigações legais aplicáveis:</p>
+                        <p>— Processos clínicos: conservados durante o período exigido pelas normas legais e
+                            deontológicas
+                            aplicáveis à atividade profissional do psicólogo, atualmente até 10 anos após o último
+                            contacto
+                            clínico.</p>
+                        <p>— Dados de faturação: conservados durante 10 anos, para cumprimento das obrigações fiscais e
+                            contabilísticas.</p>
+                        <p>— Dados de navegação e cookies: conservados por um período máximo de 13 meses, salvo prazo
+                            diferente exigido por lei ou mediante renovação do consentimento do utilizador.</p>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-family:'Cormorant Upright',serif;font-size:1.2rem;color:var(--forest);font-weight:400;margin-bottom:.5rem;">
+                            4. Partilha de Dados</h3>
+                        <p>Os dados pessoais não são vendidos, comercializados ou utilizados para fins publicitários.
+                        </p>
+                        <p>Os dados poderão ser partilhados apenas quando estritamente necessário com:</p>
+                        <p style="margin-top:.8rem;"><strong>4.1 Subcontratantes</strong></p>
+                        <p>Entidades que prestam serviços necessários ao funcionamento da atividade, tais como:
+                            alojamento
+                            do website; serviço de email profissional; processamento técnico do formulário de contacto;
+                            software de faturação; plataformas de videoconsulta; outros prestadores tecnológicos
+                            necessários
+                            à prestação dos serviços.</p>
+                        <p>Estas entidades atuam mediante instruções do responsável pelo tratamento e encontram-se
+                            sujeitas
+                            a obrigações adequadas de confidencialidade e proteção de dados.</p>
+                        <p>O formulário de contacto do website utiliza o serviço <strong>Web3Forms</strong>, operado
+                            pela
+                            Web3Creative, que atua como subcontratante para receção, processamento técnico e
+                            encaminhamento
+                            dos pedidos submetidos através do formulário.</p>
+                        <p style="margin-top:.8rem;"><strong>4.2 Autoridades Competentes:</strong> Quando tal seja
+                            exigido
+                            por lei ou por decisão da autoridade judicial ou administrativa competente.</p>
+                        <p style="margin-top:.8rem;"><strong>4.3 Proteção de interesses vitais:</strong> Em situações
+                            excecionais de risco grave e iminente para a vida ou integridade física do titular dos dados
+                            ou
+                            de terceiros, nos termos da legislação aplicável e dos deveres deontológicos.</p>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-family:'Cormorant Upright',serif;font-size:1.2rem;color:var(--forest);font-weight:400;margin-bottom:.5rem;">
+                            5. Segurança dos Dados</h3>
+                        <p>São implementadas medidas técnicas adequadas (como encriptação SSL/TLS e controlo de acessos)
+                            para proteger os dados pessoais contra acesso não autorizado, perda ou divulgação.</p>
+                        <p>Tratando-se de consultas online, as plataformas utilizadas garantem a segurança na
+                            transmissão da
+                            informação.</p>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-family:'Cormorant Upright',serif;font-size:1.2rem;color:var(--forest);font-weight:400;margin-bottom:.5rem;">
+                            6. Direitos do Titular</h3>
+                        <p>O titular pode exercer, a qualquer momento, os seguintes direitos:</p>
+                        <p>— Acesso, Retificação e Apagamento (salvo obrigações legais de arquivo clínico);</p>
+                        <p>— Portabilidade e Limitação do tratamento;</p>
+                        <p>— Retirar o consentimento a qualquer momento;</p>
+                        <p>— Apresentar reclamação à autoridade de controlo.</p>
+                        <p style="margin-top:.6rem;">Para exercer estes direitos, deve enviar um e-mail para: <a
+                                href="mailto:psicologia@raizesdoeu.pt"
+                                style="color:var(--terra)">psicologia@raizesdoeu.pt</a>. O pedido será respondido no
+                            prazo
+                            máximo de 30 dias.</p>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-family:'Cormorant Upright',serif;font-size:1.2rem;color:var(--forest);font-weight:400;margin-bottom:.5rem;">
+                            7. Cookies</h3>
+                        <p>O website utiliza cookies e tecnologias semelhantes para assegurar o seu funcionamento,
+                            melhorar
+                            a experiência do utilizador e garantir a segurança da plataforma.</p>
+                        <p>Quando aplicável, determinados cookies poderão depender do consentimento do utilizador,
+                            podendo
+                            este gerir ou retirar as suas preferências através das definições disponíveis no website ou
+                            no
+                            próprio navegador.</p>
+                    </div>
+                    <div>
+                        <h3
+                            style="font-family:'Cormorant Upright',serif;font-size:1.2rem;color:var(--forest);font-weight:400;margin-bottom:.5rem;">
+                            8. Autoridade de Controlo</h3>
+                        <p>Comissão Nacional de Proteção de Dados (<a href="https://www.cnpd.pt" target="_blank"
+                                rel="noopener" style="color:var(--terra)">www.cnpd.pt</a>)</p>
+                    </div>
+                    <p style="font-size:.78rem;color:var(--txt3);border-top:1px solid var(--border);padding-top:1rem;">
+                        Última atualização: julho de 2026</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- COOKIE BANNER -->
+        <div id="cookieBanner" style="display:none">
+            <p>Este site utiliza cookies para análise anónima de visitas, com o objetivo de melhorar a experiência dos
+                utilizadores. Pode aceitar ou recusar o uso de cookies não essenciais.</p>
+            <div class="cookie-btns">
+                <button id="cookieAccept">Aceitar Cookies</button>
+                <button id="cookieReject">Apenas Essenciais</button>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        // Custom cursor
+        const dot = document.getElementById('cDot');
+        const ring = document.getElementById('cRing');
+        let mx = 0, my = 0, rx = 0, ry = 0;
+        document.addEventListener('mousemove', e => {
+            mx = e.clientX; my = e.clientY;
+            dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+        });
+        (function animRing() {
+            rx += (mx - rx) * .12; ry += (my - ry) * .12;
+            ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+            requestAnimationFrame(animRing);
+        })();
+        document.querySelectorAll('a, button, .faq-q, .serv-block').forEach(el => {
+            el.addEventListener('mouseenter', () => { dot.classList.add('hov'); ring.classList.add('hov'); });
+            el.addEventListener('mouseleave', () => { dot.classList.remove('hov'); ring.classList.remove('hov'); });
+        });
+
+        // Nav scroll
+        window.addEventListener('scroll', () => {
+            document.getElementById('mainNav').classList.toggle('scrolled', scrollY > 50);
+        }, { passive: true });
+
+        // Mobile menu
+        const mMenu = document.getElementById('mobileMenu');
+        document.getElementById('hamburger').addEventListener('click', () => mMenu.classList.toggle('open'));
+        function closeMobile() { mMenu.classList.remove('open'); }
+
+        // Scroll reveal
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
+        }, { threshold: .12 });
+        document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-q').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+
+        // Áreas de Intervenção accordion
+        document.querySelectorAll('.serv-block').forEach(block => {
+            block.addEventListener('click', () => {
+                const wasOpen = block.classList.contains('open');
+                document.querySelectorAll('.serv-block').forEach(b => b.classList.remove('open'));
+                if (!wasOpen) block.classList.add('open');
+            });
+        });
+
+        // Form submit via Web3Forms
+        document.getElementById('contForm').addEventListener('submit', async e => {
+            e.preventDefault();
+            const form = e.target;
+            const btn = form.querySelector('.btn-send');
+            const success = document.getElementById('fSuccess');
+            const error = document.getElementById('fError');
+
+            if (!form.querySelector('#rgpd').checked) {
+                error.style.display = 'block';
+                setTimeout(() => { error.style.display = 'none'; }, 5000);
+                return;
+            }
+            error.style.display = 'none';
+
+            btn.disabled = true;
+            btn.textContent = 'A enviar...';
+
+            const data = new FormData(form);
+            try {
+                const res = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: data
+                });
+                const json = await res.json();
+                if (json.success) {
+                    success.style.display = 'block';
+                    form.reset();
+                    setTimeout(() => { success.style.display = 'none'; }, 6000);
+                } else {
+                    alert('Erro ao enviar a mensagem. Por favor tente novamente ou contacte por e-mail.');
+                }
+            } catch {
+                alert('Sem ligação. Por favor tente novamente.');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Vamos conversar?';
+            }
+        });
+
+        // Política de Privacidade modal
+        const privacyModal = document.getElementById('privacyModal');
+        function openPrivacy(e) { e.preventDefault(); privacyModal.style.display = 'block'; document.body.style.overflow = 'hidden'; }
+        function closePrivacy() { privacyModal.style.display = 'none'; document.body.style.overflow = ''; }
+        document.getElementById('privacyLink').addEventListener('click', openPrivacy);
+        document.getElementById('privacyLinkForm').addEventListener('click', openPrivacy);
+        document.getElementById('privacyClose').addEventListener('click', closePrivacy);
+        privacyModal.addEventListener('click', e => { if (e.target === privacyModal) closePrivacy(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closePrivacy(); });
+
+        // Google Analytics loader
+        function loadAnalytics() {
+            const s = document.createElement('script');
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+            s.async = true;
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+        }
+
+        // Cookie consent logic
+        let consent = null;
+        try { consent = localStorage.getItem('cookie_consent'); } catch (e) { }
+
+        if (consent === 'accepted') {
+            loadAnalytics();
+        } else if (!consent) {
+            document.getElementById('cookieBanner').style.display = 'flex';
+        }
+
+        document.getElementById('cookieAccept').addEventListener('click', () => {
+            try { localStorage.setItem('cookie_consent', 'accepted'); } catch (e) { }
+            document.getElementById('cookieBanner').style.display = 'none';
+            loadAnalytics();
+        });
+
+        document.getElementById('cookieReject').addEventListener('click', () => {
+            try { localStorage.setItem('cookie_consent', 'rejected'); } catch (e) { }
+            document.getElementById('cookieBanner').style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html>
